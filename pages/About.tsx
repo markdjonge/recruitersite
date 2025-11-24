@@ -40,7 +40,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="text-center">
                     <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Fc487e3f15b6f4aa2b480c36ff9b1958b?format=webp&width=800" alt="Dennis van Wees" className="w-full h-full object-cover" />
+                        <img src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Ff92bf63d20424fc5bc1cf4efe757c810?format=webp&width=800" alt="Dennis van Wees" className="w-full h-full object-cover" />
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Dennis van Wees</h3>
                     <p className="text-slate-600 mb-4">Recruitment Manager</p>
