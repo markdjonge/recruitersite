@@ -56,6 +56,28 @@ const About: React.FC = () => {
             </div>
         </div>
 
+        {/* Team */}
+        <div className="mt-24">
+            <h2 className="text-4xl font-black mb-12 text-slate-900">Ons team.</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+                <div className="text-center">
+                    <div className="bg-slate-200 w-full aspect-square rounded-2xl mb-6"></div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Team member</h3>
+                    <p className="text-slate-600">Functie</p>
+                </div>
+                <div className="text-center">
+                    <div className="bg-slate-200 w-full aspect-square rounded-2xl mb-6"></div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Team member</h3>
+                    <p className="text-slate-600">Functie</p>
+                </div>
+                <div className="text-center">
+                    <div className="bg-slate-200 w-full aspect-square rounded-2xl mb-6"></div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Team member</h3>
+                    <p className="text-slate-600">Functie</p>
+                </div>
+            </div>
+        </div>
+
       </div>
     </div>
   );
