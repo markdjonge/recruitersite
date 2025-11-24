@@ -26,6 +26,31 @@ const About: React.FC = () => {
              </div>
         </div>
 
+        {/* Team */}
+        <div className="mb-24">
+            <h2 className="text-4xl font-black mb-8 text-slate-900">Maak kennis met ons team.</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+                <div className="text-center">
+                    <div className="bg-slate-200 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6"></div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Team member</h3>
+                    <p className="text-slate-600 mb-4">Functie</p>
+                    <div className="w-12 h-1 bg-brand-yellow mx-auto"></div>
+                </div>
+                <div className="text-center">
+                    <div className="bg-slate-200 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6"></div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Team member</h3>
+                    <p className="text-slate-600 mb-4">Functie</p>
+                    <div className="w-12 h-1 bg-brand-yellow mx-auto"></div>
+                </div>
+                <div className="text-center">
+                    <div className="bg-slate-200 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6"></div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Team member</h3>
+                    <p className="text-slate-600 mb-4">Functie</p>
+                    <div className="w-12 h-1 bg-brand-yellow mx-auto"></div>
+                </div>
+            </div>
+        </div>
+
         {/* Values */}
         <div className="bg-slate-900 text-white rounded-[3rem] p-12 md:p-24">
             <div className="max-w-4xl mx-auto">
@@ -52,28 +77,6 @@ const About: React.FC = () => {
                         <h3 className="text-xl font-bold mb-3">Partnership</h3>
                         <p className="text-slate-400 leading-relaxed">Wij zijn geen leverancier, maar een partner. We denken mee over de lange termijn.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        {/* Team */}
-        <div className="mt-24">
-            <h2 className="text-4xl font-black mb-12 text-slate-900">Ons team.</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-                <div className="text-center">
-                    <div className="bg-slate-200 w-full aspect-square rounded-2xl mb-6"></div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Team member</h3>
-                    <p className="text-slate-600">Functie</p>
-                </div>
-                <div className="text-center">
-                    <div className="bg-slate-200 w-full aspect-square rounded-2xl mb-6"></div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Team member</h3>
-                    <p className="text-slate-600">Functie</p>
-                </div>
-                <div className="text-center">
-                    <div className="bg-slate-200 w-full aspect-square rounded-2xl mb-6"></div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Team member</h3>
-                    <p className="text-slate-600">Functie</p>
                 </div>
             </div>
         </div>
