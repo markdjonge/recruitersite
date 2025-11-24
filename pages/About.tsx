@@ -32,7 +32,7 @@ const About: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-8">
                 <div className="text-center">
                     <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F5262fabcc30c44b8bf869b48c6edb80e?format=webp&width=800" alt="Mark de Jonge" className="w-full h-full object-cover" />
+                        <img src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Fc3df6f80d4de4a20a1e84636b1f40be1?format=webp&width=800" alt="Mark de Jonge" className="w-full h-full object-cover" />
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Mark de Jonge</h3>
                     <p className="text-slate-600 mb-4">Founder</p>
