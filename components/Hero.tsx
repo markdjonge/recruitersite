@@ -13,9 +13,9 @@ const Hero: React.FC = () => {
           
           <div className="max-w-3xl">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-slate-900 mb-8 leading-[0.9]">
-              Jij de business,<br />
+              wij de match,<br />
               <span className="relative inline-block">
-                wij de match.
+                Jij de business.
                 <svg className="absolute w-full h-4 -bottom-1 left-0 text-brand-yellow -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
                 </svg>
