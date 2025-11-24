@@ -31,9 +31,11 @@ const About: React.FC = () => {
             <h2 className="text-4xl font-black mb-8 text-slate-900">Maak kennis met ons team.</h2>
             <div className="grid md:grid-cols-3 gap-8">
                 <div className="text-center">
-                    <div className="bg-slate-200 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6"></div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Team member</h3>
-                    <p className="text-slate-600 mb-4">Functie</p>
+                    <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+                        <img src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F5262fabcc30c44b8bf869b48c6edb80e?format=webp&width=800" alt="Mark de Jonge" className="w-full h-full object-cover" />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Mark de Jonge</h3>
+                    <p className="text-slate-600 mb-4">Founder</p>
                     <div className="w-12 h-1 bg-brand-yellow mx-auto"></div>
                 </div>
                 <div className="text-center">
