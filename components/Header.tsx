@@ -43,7 +43,6 @@ const Header: React.FC = () => {
           <Link to="/diensten" className={`text-base font-bold transition-colors ${isActive('/diensten')}`}>Onze diensten</Link>
           <Link to="/cases" className={`text-base font-bold transition-colors ${isActive('/cases')}`}>Cases</Link>
           <Link to="/over-ons" className={`text-base font-bold transition-colors ${isActive('/over-ons')}`}>Over ons</Link>
-          <Link to="/werken-bij" className={`text-base font-bold transition-colors ${isActive('/werken-bij')}`}>Werken bij LinkedUp</Link>
         </nav>
 
         {/* Right Side - Phone & CTA */}
