@@ -19,9 +19,6 @@ const About: React.FC = () => {
                 <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                    Daarom hebben wij LinkedUp opgericht. Wij zijn jouw externe motor voor business development en sourcing. Zodat jij kunt doen waar je goed in bent.
                 </p>
-                <Link to="/contact" className="text-slate-900 font-bold text-lg border-b-2 border-brand-yellow pb-1 hover:border-slate-900 transition-colors inline-flex items-center gap-2">
-                    Maak kennis met ons team <ArrowRight size={20} />
-                </Link>
              </div>
              <div className="grid grid-cols-2 gap-4">
                  <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=600" className="rounded-2xl mt-12 shadow-xl" alt="Office vibe" />
