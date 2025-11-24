@@ -11,7 +11,7 @@ export const cases = [
   {
     id: "it-sourcing-fuuse",
     category: "Sourcing | Finance & Control",
-    stat: "30+ Interviews/mnd",
+    stat: "30+ Interviews",
     title: "Fuuse: Opschalen van Financial Controllers.",
     desc: "Voor Fuuse hebben we de sourcing van Financial en Business Controllers volledig geoptimaliseerd.",
     fullContent: "Fuuse had moeite om kwalitatieve Financial Controllers te vinden via de standaard kanalen. Wij hebben een sourcing strategie uitgerold die zich richt op passief talent via niche communities en direct search. Resultaat: Een constante stroom van 30 gekwalificeerde kandidaten per maand in hun interview funnel.",
