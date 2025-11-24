@@ -47,9 +47,11 @@ const About: React.FC = () => {
                     <div className="w-12 h-1 bg-brand-yellow mx-auto"></div>
                 </div>
                 <div className="text-center">
-                    <div className="bg-slate-200 w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6"></div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Team member</h3>
-                    <p className="text-slate-600 mb-4">Functie</p>
+                    <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+                        <img src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Fc1e9ab3f935943d08766d8d186be23ac?format=webp&width=800" alt="Maarten de Lange" className="w-full h-full object-cover" />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Maarten de Lange</h3>
+                    <p className="text-slate-600 mb-4">Recruitment Manager</p>
                     <div className="w-12 h-1 bg-brand-yellow mx-auto"></div>
                 </div>
             </div>
