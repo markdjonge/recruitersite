@@ -7,6 +7,7 @@ const Services: React.FC = () => {
     {
       id: 1,
       title: 'Leadgeneratie',
+      slug: 'leadgeneratie',
       description: 'Wij benaderen proactief potentiële opdrachtgevers in jouw niche. Geen koude acquisitie meer voor jou, maar warme leads en afspraken in je agenda.',
       icon: Target,
       iconBg: 'bg-brand-yellow',
@@ -16,6 +17,7 @@ const Services: React.FC = () => {
     {
       id: 2,
       title: 'Sourcing',
+      slug: 'sourcing',
       description: 'Bereik talent nog vóór ze "Open to Work" staan. Wij identificeren kandidaten die hun profiel optimaliseren en bereiken ze via slimme cross-channel campagnes.',
       icon: Users,
       iconBg: 'bg-slate-900',
@@ -25,6 +27,7 @@ const Services: React.FC = () => {
     {
       id: 3,
       title: 'Automation & AI',
+      slug: 'automation-ai',
       description: 'Automatiseer je recruitment tech stack. Van het syncen van "Open to Work" profielen naar je ATS tot AI-matching en het spotten van sales kansen.',
       icon: Bot,
       iconBg: 'bg-slate-100',
