@@ -23,7 +23,7 @@ export const cases = [
     stat: "40 nieuwe plaatsingen",
     title: "Consistente instroom van leads én kandidaten.",
     desc: "Wij pakken de volledige funnel op: van lead tot match. Resultaat: 40 succesvolle plaatsingen in 12 maanden tijd.",
-    fullContent: "Deze startup in de zorg liep tegen het kip-ei probleem aan: te weinig kandidaten voor de klanten, en te weinig klanten voor de kandidaten. LinkedUp heeft beide kanten opgepakt. We voerden sales gesprekken met zorginstellingen én sourceten verpleegkundigen. Hierdoor kon de agency zich focussen op het matchen, wat leidde tot een verdubbeling van de omzet.",
+    fullContent: "Voor Rendement Recruiters hebben we de klassieke kip-ei discussie doorbroken. Waar veel bureaus moeten kiezen tussen sales of sourcing, hebben wij beide processen parallel opgezet.\n\nWij leveren maandelijks 25+ warme leads aan, wat resulteert in gemiddeld 4 nieuwe opdrachten per maand. Tegelijkertijd sourcen we 150 kandidaten op deze profielen. Door deze dubbele focus kan Rendement Recruiters zich volledig richten op het matchen. Dit zorgde niet alleen voor 40 plaatsingen in het afgelopen jaar, maar garandeerde ook dat opdrachten consequent binnen 4 tot 6 weken werden vervuld.",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800"
   }
 ];
