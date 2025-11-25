@@ -45,7 +45,7 @@ const Services: React.FC = () => {
           </div>
 
           <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
-            <div className="w-16 h-16 bg-brand-yellow rounded-2xl flex items-center justify-center mb-6 text-slate-900">
+            <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-6 text-slate-900">
               <Bot size={32} strokeWidth={2.5} />
             </div>
             <h3 className="text-2xl font-black text-slate-900 mb-4">Automation & AI</h3>
