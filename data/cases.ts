@@ -1,6 +1,6 @@
 export const cases = [
   {
-    id: "bouw-recruitment",
+    id: "leadgeneratie-techniek",
     category: "Leadgeneratie | Techniek",
     stat: "15 Nieuwe Klanten",
     title: "Structurele instroom van vacatures voor CareerScout.",
