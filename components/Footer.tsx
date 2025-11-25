@@ -53,10 +53,6 @@ const Footer: React.FC = () => {
         
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm font-medium">
           <p>© {new Date().getFullYear()} LinkedUp B.V.</p>
-          <div className="flex gap-8">
-            <Link to="/privacy" className="hover:text-white">Privacy</Link>
-            <Link to="/voorwaarden" className="hover:text-white">Algemene Voorwaarden</Link>
-          </div>
         </div>
       </div>
     </footer>
