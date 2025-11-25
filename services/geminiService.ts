@@ -8,6 +8,10 @@ export interface StrategyResult {
   candidates: string[];
   opportunity: string;
   vacancyStats: { platform: string; count: string }[];
+  hiringManagers: {
+    smallBusinesses: string[];
+    largeCompanies: string[];
+  };
 }
 
 export const generateLeadStrategy = async (niche: string): Promise<StrategyResult> => {
