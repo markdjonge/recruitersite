@@ -45,17 +45,17 @@ const Services: React.FC = () => {
           </div>
 
           <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
-            <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-6 text-slate-900">
-              <BarChart3 size={32} strokeWidth={2.5} />
+            <div className="w-16 h-16 bg-brand-yellow rounded-2xl flex items-center justify-center mb-6 text-slate-900">
+              <Bot size={32} strokeWidth={2.5} />
             </div>
-            <h3 className="text-2xl font-black text-slate-900 mb-4">Consultancy</h3>
+            <h3 className="text-2xl font-black text-slate-900 mb-4">Automation & AI</h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              Advies over je positionering, pricing en groeistrategie. Wij helpen je om je bureau schaalbaar te maken.
+              Automatiseer je recruitment tech stack. Van het syncen van 'Open to Work' profielen naar je ATS tot AI-matching en het spotten van sales kansen bij klanten.
             </p>
             <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500">
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>Groei strategie</li>
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>Tooling advies</li>
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>Training</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>LinkedIn & ATS Sync</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Vacature detectie (Client Radar)</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>AI Kandidaat Matching</li>
             </ul>
           </div>
         </div>
