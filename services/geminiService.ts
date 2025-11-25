@@ -31,6 +31,7 @@ export const generateLeadStrategy = async (niche: string): Promise<StrategyResul
       - vacancyStats: Een array met objecten {platform, count} met een REALISTISCHE SCHATTING van het aantal openstaande vacatures in Nederland.
         *   Gebruik bronnen als referentie: LinkedIn, Indeed, Nationale Vacaturebank.
         *   Formatteer getallen netjes: "450+", "~1.200", "> 80".
+        *   Niet te formeel spreken. Dus niet met "u" aanspreken.
         *   Wees specifiek voor de niche "${niche}".
       - opportunity: Eén sterke slotzin waarom uitbesteden aan LinkedUp zorgt voor snellere groei in deze specifieke niche.
       - hiringManagers: Een object met twee arrays:
