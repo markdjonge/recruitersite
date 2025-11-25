@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Users, BarChart3, ArrowRight } from 'lucide-react';
+import { Target, Users, Bot, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Services: React.FC = () => {
