@@ -23,13 +23,12 @@ const Features: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cases.map((item) => (
             <div key={item.id} className="bg-white rounded-[2rem] overflow-hidden group hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col h-full">
-              <div className="h-64 overflow-hidden relative">
-                <img 
-                  src={item.image} 
+              <div className="h-64 bg-brand-yellow overflow-hidden relative flex items-center justify-center p-8">
+                <img
+                  src={item.logo}
                   alt={item.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  className="h-32 object-contain"
                 />
-                <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors"></div>
               </div>
               
               <div className="p-8 flex-1 flex flex-col">
