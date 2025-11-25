@@ -36,7 +36,9 @@ const CaseDetail: React.FC = () => {
                  </p>
                  <div className="prose prose-lg text-slate-600">
                     <p className="mb-6">{caseItem.desc}</p>
-                    <p>{caseItem.fullContent}</p>
+                    {caseItem.fullContent.split('\n\n').map((paragraph, index) => (
+                      <p key={index} className={index < caseItem.fullContent.split('\n\n').length - 1 ? 'mb-6' : ''}>{paragraph}</p>
+                    ))}
                  </div>
                  
                  <div className="mt-12 flex gap-4">
