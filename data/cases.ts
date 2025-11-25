@@ -20,7 +20,7 @@ export const cases = [
   {
     id: "zorg-scaleup",
     category: "Full Service | Sales",
-    stat: "200% Groei",
+    stat: "Consistente instroom van leads én kandidaten",
     title: "Verdubbeling van de business in 12 maanden.",
     desc: "Door zowel de verkoop (zorginstellingen) als inkoop (verpleegkundigen) te ondersteunen, kon deze start-up vliegen.",
     fullContent: "Deze startup in de zorg liep tegen het kip-ei probleem aan: te weinig kandidaten voor de klanten, en te weinig klanten voor de kandidaten. LinkedUp heeft beide kanten opgepakt. We voerden sales gesprekken met zorginstellingen én sourceten verpleegkundigen. Hierdoor kon de agency zich focussen op het matchen, wat leidde tot een verdubbeling van de omzet.",
