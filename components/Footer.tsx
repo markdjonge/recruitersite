@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-brand-yellow mb-6 uppercase tracking-wider text-sm">Socials</h4>
             <div className="flex gap-4">
-              <a href="https://www.linkedin.com/company/90763893/" className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-yellow hover:text-slate-900 transition-all">
+              <a href="https://www.linkedin.com/company/90763893/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-yellow hover:text-slate-900 transition-all">
                 <Linkedin size={20} />
               </a>
             </div>
