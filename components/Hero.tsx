@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
                  </div>
              </div>
              {/* Floating Badge */}
-             <div className="absolute -bottom-10 -right-10 bg-white p-8 rounded-3xl shadow-xl border border-slate-100 max-w-xs">
+             <div className="absolute -bottom-10 -right-10 bg-white p-8 rounded-3xl shadow-xl border border-slate-100 max-w-xs hidden">
                  <p className="text-5xl font-black text-slate-900 mb-2">2-zijdig</p>
                  <p className="text-slate-600 font-medium">Groei in opdrachtgevers én kandidaten.</p>
              </div>
