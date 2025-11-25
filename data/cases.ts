@@ -17,7 +17,7 @@ export const cases = [
     desc: "Voor Fuuse hebben we de sourcing van Financial en Business Controllers volledig geoptimaliseerd.",
     fullContent: "Fuuse had moeite om kwalitatieve Financial Controllers te vinden via de standaard kanalen. Wij hebben een sourcing strategie uitgerold die zich richt op passief talent via niche communities en direct search. Resultaat: Een constante stroom van 30 gekwalificeerde kandidaten per maand in hun interview funnel.",
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800",
-    logo:""
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F984936c4e46e4cf2a513d42cb2552976?format=webp&width=800"
   },
   {
     id: "zorg-scaleup",
