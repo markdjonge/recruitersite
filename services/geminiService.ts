@@ -27,7 +27,7 @@ export const generateLeadStrategy = async (niche: string): Promise<StrategyResul
       Retourneer JSON:
       - headline: Een zakelijke, prikkelende kop over de marktkans (max 6 woorden).
       - clients: 3 specifieke type organisaties of sectoren die LinkedUp voor deze agency kan benaderen voor nieuwe opdrachten (Sales focus).
-      - candidates: 3 specifieke bronnen of methoden die LinkedUp inzet om het schaarse talent in deze niche te vinden (Sourcing focus).
+      - candidates: Benoem hier welke bronnen het meest aannemelijk zijn de kandidaten te vinden. Je kunt kiezen uit linkedin, meta, en google ads. Sommige soorten kandidaten zijn in meerdere kanalen goed te vinden, andere juist maar op één enkele.
       - vacancyStats: Een array met objecten {platform, count} met een REALISTISCHE SCHATTING van het aantal openstaande vacatures in Nederland.
         *   Gebruik bronnen als referentie: LinkedIn, Indeed, Nationale Vacaturebank.
         *   Formatteer getallen netjes: "450+", "~1.200", "> 80".
