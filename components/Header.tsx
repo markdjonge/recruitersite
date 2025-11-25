@@ -47,9 +47,6 @@ const Header: React.FC = () => {
 
         {/* Right Side - Phone & CTA */}
         <div className="hidden md:flex items-center gap-6">
-           <a href="tel:0887624010" className="text-slate-900 font-bold hover:underline decoration-brand-yellow decoration-2 underline-offset-4 hidden xl:block">
-             020 – 123 45 67
-           </a>
            <Link to="/contact" className="bg-slate-900 text-white px-8 py-3 rounded-full text-sm font-bold hover:bg-slate-800 transition-colors shadow-lg shadow-slate-900/10">
              Contact opnemen
            </Link>
