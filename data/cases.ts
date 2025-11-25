@@ -7,7 +7,7 @@ export const cases = [
     desc: "Wij namen de outreach in Nederland volledig uit handen. Resultaat: 15 nieuwe opdrachtgevers die actief op zoek zijn naar monteurs en engineers.",
     fullContent: "Voor CareerScout hebben wij een gerichte outbound strategie opgezet om de Nederlandse markt te veroveren. Door proactief bedrijven te benaderen met een sterke behoefte aan technisch personeel, konden we direct inspelen op de schaarste aan monteurs en engineers.\n\nDeze aanpak zorgde ervoor dat CareerScout niet hoefde te wachten op inkomende leads, maar direct aan tafel zat bij de juiste partijen.Dit resulteerde in 15 nieuwe, structurele partnerschappen met bedrijven in de techniek.",
     image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Fc6c9440f1d0c4562b113d2d48b42041b?format=webp&width=800"
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F53cf40543c914702990db72517b37ddb?format=webp&width=800"
   },
   {
     id: "it-sourcing-fuuse",
