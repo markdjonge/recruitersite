@@ -50,9 +50,9 @@ const Hero: React.FC = () => {
 
           <div className="relative hidden lg:block">
              <div className="aspect-square rounded-[3rem] overflow-hidden relative shadow-2xl border-4 border-white">
-                 <img 
-                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" 
-                    alt="Team collaboration" 
+                 <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Fff53698eb8ff4c169cfd3f54a564a66f?format=webp&width=800"
+                    alt="Team collaboration"
                     className="object-cover w-full h-full"
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
