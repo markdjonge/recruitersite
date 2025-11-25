@@ -50,7 +50,7 @@ const Services: React.FC = () => {
           {services.map((service) => {
             const IconComponent = service.icon;
             return (
-              <div key={service.id} className="bg-brand-gray p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div key={service.id} className="bg-brand-gray p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
                 <div className={`w-16 h-16 ${service.iconBg} rounded-2xl flex items-center justify-center mb-6`}>
                   <IconComponent size={32} strokeWidth={2.5} className={service.iconColor} />
                 </div>
@@ -58,7 +58,7 @@ const Services: React.FC = () => {
                 <p className="text-slate-600 mb-6 leading-relaxed text-sm">
                   {service.description}
                 </p>
-                <ul className="space-y-2 text-sm font-medium text-slate-500">
+                <ul className="space-y-2 text-sm font-medium text-slate-500 mb-8 flex-1">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>
@@ -66,6 +66,10 @@ const Services: React.FC = () => {
                     </li>
                   ))}
                 </ul>
+                <Link to={`/diensten/${service.slug}`} className="w-full bg-brand-yellow text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2">
+                  Leer meer
+                  <ArrowRight size={20} />
+                </Link>
               </div>
             );
           })}
