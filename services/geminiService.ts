@@ -23,16 +23,19 @@ export const generateLeadStrategy = async (niche: string): Promise<StrategyResul
       
       Jouw taak: Genereer een 'Market Potential Report' om te laten zien hoeveel business er voor het oprapen ligt.
       LinkedUp is GEEN tool, maar een dienstverlener die actief business vindt (opdrachtgevers) en resources sourcet (kandidaten).
-      
+
       Retourneer JSON:
       - headline: Een zakelijke, prikkelende kop over de marktkans (max 6 woorden).
       - clients: 3 specifieke type organisaties of sectoren die LinkedUp voor deze agency kan benaderen voor nieuwe opdrachten (Sales focus).
       - candidates: 3 specifieke bronnen of methoden die LinkedUp inzet om het schaarse talent in deze niche te vinden (Sourcing focus).
       - vacancyStats: Een array met objecten {platform, count} met een REALISTISCHE SCHATTING van het aantal openstaande vacatures in Nederland.
         *   Gebruik bronnen als referentie: LinkedIn, Indeed, Nationale Vacaturebank.
-        *   Formatteer getallen netjes: "450+", "~1.200", "> 80". 
+        *   Formatteer getallen netjes: "450+", "~1.200", "> 80".
         *   Wees specifiek voor de niche "${niche}".
-      - opportunity: Eén sterke slotzin waarom uitbesteden aan LinkedUp zorgt voor snellere groei in deze specifieke niche.`,
+      - opportunity: Eén sterke slotzin waarom uitbesteden aan LinkedUp zorgt voor snellere groei in deze specifieke niche.
+      - hiringManagers: Een object met twee arrays:
+        * smallBusinesses: 2 specifieke functietitels van hiring managers in kleine bedrijven (1-50 personeelsleden) die deze rol waarschijnlijk vervullen (bijv. "HR Manager", "Bedrijfsleider")
+        * largeCompanies: 2 specifieke functietitels van hiring managers in grote bedrijven (100+ personeelsleden) die deze rol waarschijnlijk vervullen (bijv. "Head of Recruitment", "Talent Acquisition Manager")`,
       config: {
         responseMimeType: "application/json",
         responseSchema: {
