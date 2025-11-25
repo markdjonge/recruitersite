@@ -40,6 +40,7 @@ const Services: React.FC = () => {
             <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500">
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Pre-Open to Work signalen</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Meta & LinkedIn outreach</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Directe ATS onboarding</li>
             </ul>
           </div>
 
