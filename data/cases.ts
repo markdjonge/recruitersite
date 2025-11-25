@@ -10,7 +10,7 @@ export const cases = [
   },
   {
     id: "it-sourcing-fuuse",
-    category: "Sourcing | Finance & Control",
+    category: "Sourcing | Finance",
     stat: "30+ Interviews",
     title: "Fuuse: Opschalen van Financial Controllers.",
     desc: "Voor Fuuse hebben we de sourcing van Financial en Business Controllers volledig geoptimaliseerd.",
