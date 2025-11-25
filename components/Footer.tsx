@@ -47,9 +47,6 @@ const Footer: React.FC = () => {
               <a href="#" className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-yellow hover:text-slate-900 transition-all">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-yellow hover:text-slate-900 transition-all">
-                <Twitter size={20} />
-              </a>
             </div>
           </div>
         </div>
