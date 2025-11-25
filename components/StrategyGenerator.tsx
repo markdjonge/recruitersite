@@ -151,6 +151,33 @@ const StrategyGenerator: React.FC = () => {
                    </div>
                 </div>
 
+                <div className="grid md:grid-cols-2 gap-6 mb-8 relative z-10">
+                   <div className="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                      <h4 className="font-bold text-sm uppercase text-slate-900 mb-4">Hiring Managers - Kleine Bedrijven</h4>
+                      <ul className="space-y-3">
+                        {result.hiringManagers?.smallBusinesses?.map((s, i) => (
+                          <li key={i} className="text-sm font-medium text-slate-600 border-b border-slate-100 pb-2 last:border-0 last:pb-0 flex items-start gap-2">
+                             <span className="text-brand-yellow font-bold">•</span>
+                             {s}
+                          </li>
+                        ))}
+                      </ul>
+                      <p className="text-xs text-slate-500 mt-3 pt-3 border-t border-slate-100 italic">1-50 personeelsleden</p>
+                   </div>
+                   <div className="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                      <h4 className="font-bold text-sm uppercase text-slate-900 mb-4">Hiring Managers - Grote Bedrijven</h4>
+                      <ul className="space-y-3">
+                        {result.hiringManagers?.largeCompanies?.map((s, i) => (
+                          <li key={i} className="text-sm font-medium text-slate-600 border-b border-slate-100 pb-2 last:border-0 last:pb-0 flex items-start gap-2">
+                             <span className="text-brand-yellow font-bold">•</span>
+                             {s}
+                          </li>
+                        ))}
+                      </ul>
+                      <p className="text-xs text-slate-500 mt-3 pt-3 border-t border-slate-100 italic">100+ personeelsleden</p>
+                   </div>
+                </div>
+
                 <div className="bg-brand-gray p-6 rounded-2xl border border-slate-200 relative z-10">
                    <p className="text-xs font-bold text-slate-400 uppercase mb-2">
                      Advies
