@@ -27,7 +27,7 @@ const Features: React.FC = () => {
                 <img
                   src={item.logo}
                   alt={item.title}
-                  className="h-32 object-contain"
+                  className="max-w-48 max-h-32 object-contain"
                 />
               </div>
               
