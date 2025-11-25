@@ -5,7 +5,9 @@ export const cases = [
     stat: "15 Nieuwe Klanten",
     title: "Structurele instroom van vacatures voor een bouw-recruiter.",
     desc: "Wij namen de koude acquisitie uit handen. Resultaat: 15 nieuwe aannemers die structureel personeel inhuren.",
-    fullContent: "Voor deze klant in de bouwsector hebben wij een volledige outbound sales funnel opgezet. Door proactief aannemers te benaderen die net grote projecten hadden gewonnen, konden we direct inspelen op hun personeelsbehoefte. Dit resulteerde in 15 nieuwe, structurele partnerschappen in slechts 3 maanden tijd.",
+    fullContent: "Voor CareerScout hebben wij een gerichte outbound strategie opgezet om de Nederlandse markt te veroveren. Door proactief bedrijven te benaderen met een sterke behoefte aan technisch personeel, konden we direct inspelen op de schaarste aan monteurs en engineers.
+    
+    Deze aanpak zorgde ervoor dat CareerScout niet hoefde te wachten op inkomende leads, maar direct aan tafel zat bij de juiste partijen.Dit resulteerde in 15 nieuwe, structurele partnerschappen met bedrijven in de techniek.",
     image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
   },
   {
