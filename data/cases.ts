@@ -10,7 +10,7 @@ export const cases = [
     logo: "https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F53cf40543c914702990db72517b37ddb?format=webp&width=800"
   },
   {
-    id: "it-sourcing-fuuse",
+    id: "sourcing-finance",
     category: "Sourcing | Finance",
     stat: "30+ Interviews",
     title: "Fuuse: Opschalen van Financial Controllers.",
