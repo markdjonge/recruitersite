@@ -55,8 +55,15 @@ export const generateLeadStrategy = async (niche: string): Promise<StrategyResul
               }
             },
             opportunity: { type: Type.STRING },
+            hiringManagers: {
+              type: Type.OBJECT,
+              properties: {
+                smallBusinesses: { type: Type.ARRAY, items: { type: Type.STRING } },
+                largeCompanies: { type: Type.ARRAY, items: { type: Type.STRING } }
+              }
+            }
           },
-          required: ["headline", "clients", "candidates", "vacancyStats", "opportunity"],
+          required: ["headline", "clients", "candidates", "vacancyStats", "opportunity", "hiringManagers"],
         },
       },
     });
