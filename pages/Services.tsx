@@ -35,12 +35,11 @@ const Services: React.FC = () => {
             </div>
             <h3 className="text-2xl font-black text-slate-900 mb-4">Sourcing</h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              Vind het talent dat niet op jobboards kijkt. Wij gebruiken geavanceerde sourcing technieken om passieve kandidaten te vinden en te interesseren.
+              Bereik talent nog vóór ze 'Open to Work' staan. Wij identificeren kandidaten die hun profiel optimaliseren en bereiken ze via slimme cross-channel campagnes, direct geleverd in jouw ATS.
             </p>
             <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500">
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Boolean search experts</li>
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Niche communities</li>
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Pre-screening</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Pre-Open to Work signalen</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Meta & LinkedIn outreach</li>
             </ul>
           </div>
 
