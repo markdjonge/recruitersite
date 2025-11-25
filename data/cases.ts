@@ -20,7 +20,7 @@ export const cases = [
     logo: "https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F984936c4e46e4cf2a513d42cb2552976?format=webp&width=800"
   },
   {
-    id: "zorg-scaleup",
+    id: "full-service-sales",
     category: "Full Service | Sales",
     stat: "40 nieuwe plaatsingen",
     title: "Consistente instroom van leads én kandidaten.",
