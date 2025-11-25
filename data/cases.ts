@@ -19,7 +19,7 @@ export const cases = [
   },
   {
     id: "zorg-scaleup",
-    category: "Full Service | Zorg",
+    category: "Full Service | Sales",
     stat: "200% Groei",
     title: "Verdubbeling van de business in 12 maanden.",
     desc: "Door zowel de verkoop (zorginstellingen) als inkoop (verpleegkundigen) te ondersteunen, kon deze start-up vliegen.",
