@@ -53,9 +53,9 @@ const Services: React.FC = () => {
               Automatiseer je recruitment tech stack. Van het syncen van 'Open to Work' profielen naar je ATS tot AI-matching en het spotten van sales kansen bij klanten.
             </p>
             <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500">
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>LinkedIn & ATS Sync</li>
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Vacature detectie (Client Radar)</li>
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>AI Kandidaat Matching</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>LinkedIn & ATS Sync</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>Vacature detectie (Client Radar)</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>AI Kandidaat Matching</li>
             </ul>
           </div>
         </div>
