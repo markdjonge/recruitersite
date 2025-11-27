@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Target, Users, Bot, ArrowRight, Check } from 'lucide-react';
+import { cases } from '../data/cases';
 
 const ServiceDetail: React.FC = () => {
   const { service } = useParams<{ service: string }>();
