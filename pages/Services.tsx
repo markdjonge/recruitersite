@@ -58,6 +58,21 @@ const Services: React.FC = () => {
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>AI Kandidaat Matching</li>
             </ul>
           </div>
+
+          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
+            <div className="w-16 h-16 bg-brand-yellow rounded-2xl flex items-center justify-center mb-6 text-slate-900">
+              <Briefcase size={32} strokeWidth={2.5} />
+            </div>
+            <h3 className="text-2xl font-black text-slate-900 mb-4">Full Service</h3>
+            <p className="text-slate-600 mb-6 leading-relaxed">
+              Wij pakken de volledige funnel op: van lead tot match. Laat ons zowel opdrachtgevers als kandidaten sourced, zodat jij je volledig op matchen kunt focussen.
+            </p>
+            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500">
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Leads én kandidaten</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Complete funnel management</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Consistente instroom</li>
+            </ul>
+          </div>
         </div>
 
         <div className="bg-brand-gray rounded-[3rem] p-12 text-center relative overflow-hidden">
