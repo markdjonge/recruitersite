@@ -33,6 +33,16 @@ const Services: React.FC = () => {
       iconBg: 'bg-slate-100',
       iconColor: 'text-slate-900',
       features: ['LinkedIn & ATS Sync', 'Open vacature detectie', 'AI Kandidaat Matching']
+    },
+    {
+      id: 4,
+      title: 'Full Service',
+      slug: 'full-service',
+      description: 'Wij pakken de volledige funnel op: van lead tot match. Laat ons zowel opdrachtgevers als kandidaten sourced, zodat jij je volledig op matchen kunt focussen.',
+      icon: Briefcase,
+      iconBg: 'bg-brand-yellow',
+      iconColor: 'text-slate-900',
+      features: ['Leads én kandidaten', 'Complete funnel management', 'Consistente instroom']
     }
   ];
 
