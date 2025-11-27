@@ -171,8 +171,8 @@ const ServiceDetail: React.FC = () => {
               <h3 className="text-4xl font-black text-slate-900 mb-2">{currentService.caseStudy.result}</h3>
               <p className="text-xl font-bold text-slate-900 mb-6">{currentService.caseStudy.title}</p>
               <p className="text-slate-600 mb-8">{currentService.caseStudy.description}</p>
-              <Link to="/cases" className="text-brand-yellow font-bold flex items-center gap-2 hover:translate-x-1 transition-transform">
-                Bekijk alle cases <ArrowRight size={20} />
+              <Link to={`/cases/${currentService.caseStudy.id}`} className="text-brand-yellow font-bold flex items-center gap-2 hover:translate-x-1 transition-transform">
+                Bekijk case <ArrowRight size={20} />
               </Link>
             </div>
           </div>
