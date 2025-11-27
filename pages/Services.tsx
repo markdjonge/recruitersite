@@ -14,7 +14,7 @@ const Services: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-20">
-          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300 flex flex-col">
             <div className="w-16 h-16 bg-brand-yellow rounded-2xl flex items-center justify-center mb-6 text-slate-900">
               <Target size={32} strokeWidth={2.5} />
             </div>
@@ -22,11 +22,15 @@ const Services: React.FC = () => {
             <p className="text-slate-600 mb-6 leading-relaxed">
               Wij benaderen proactief potentiële opdrachtgevers in jouw niche. Geen koude acquisitie meer voor jou, maar warme leads en afspraken in je agenda.
             </p>
-            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500">
+            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500 flex-1">
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Markt mapping</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Outbound campagnes</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Afspraken planning</li>
             </ul>
+            <Link to="/diensten/leadgeneratie" className="w-full bg-brand-yellow text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2">
+              Lees meer
+              <ArrowRight size={20} />
+            </Link>
           </div>
 
           <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
