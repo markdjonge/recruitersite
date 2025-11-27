@@ -25,9 +25,10 @@ const ServiceDetail: React.FC = () => {
         'Focus op je core business'
       ],
       caseStudy: {
+        id: 'leadgeneratie-techniek',
         title: 'CareerScout',
-        result: '30+ interviews',
-        description: 'We generated qualified leads that resulted in 30+ interview conversations within 3 months.'
+        result: '15 Nieuwe Klanten',
+        description: 'Wij namen de outreach in Nederland volledig uit handen. Resultaat: 15 nieuwe opdrachtgevers die actief op zoek zijn naar monteurs en engineers.'
       }
     },
     sourcing: {
