@@ -67,7 +67,7 @@ const Services: React.FC = () => {
                   ))}
                 </ul>
                 <Link to={`/diensten/${service.slug}`} className="w-full bg-brand-yellow text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2">
-                  Leer meer
+                  Lees meer
                   <ArrowRight size={20} />
                 </Link>
               </div>
