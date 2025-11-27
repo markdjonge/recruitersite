@@ -52,7 +52,7 @@ const Services: React.FC = () => {
             </Link>
           </div>
 
-          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300 flex flex-col">
             <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-6 text-slate-900">
               <Bot size={32} strokeWidth={2.5} />
             </div>
@@ -60,11 +60,15 @@ const Services: React.FC = () => {
             <p className="text-slate-600 mb-6 leading-relaxed">
               Automatiseer je recruitment tech stack. Van het syncen van 'Open to Work' profielen naar je ATS tot AI-matching en het spotten van sales kansen bij klanten.
             </p>
-            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500">
+            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500 flex-1">
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>LinkedIn & ATS Sync</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>Open vacature detectie</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>AI Kandidaat Matching</li>
             </ul>
+            <Link to="/diensten/automation-ai" className="w-full bg-brand-yellow text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2">
+              Lees meer
+              <ArrowRight size={20} />
+            </Link>
           </div>
 
           <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
