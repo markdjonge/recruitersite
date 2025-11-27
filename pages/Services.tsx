@@ -33,7 +33,7 @@ const Services: React.FC = () => {
             </Link>
           </div>
 
-          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300 flex flex-col">
             <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 text-brand-yellow">
               <Users size={32} strokeWidth={2.5} />
             </div>
@@ -41,11 +41,15 @@ const Services: React.FC = () => {
             <p className="text-slate-600 mb-6 leading-relaxed">
               Bereik talent nog vóór ze 'Open to Work' staan. Wij identificeren kandidaten die hun profiel optimaliseren en bereiken ze via slimme cross-channel campagnes, direct geleverd in jouw ATS.
             </p>
-            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500">
+            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500 flex-1">
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Pre-Open to Work signalen</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Meta & LinkedIn outreach</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Directe ATS onboarding</li>
             </ul>
+            <Link to="/diensten/sourcing" className="w-full bg-brand-yellow text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2">
+              Lees meer
+              <ArrowRight size={20} />
+            </Link>
           </div>
 
           <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
