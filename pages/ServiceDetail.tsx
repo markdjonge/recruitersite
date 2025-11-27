@@ -49,9 +49,10 @@ const ServiceDetail: React.FC = () => {
         'Direct in je ATS systeem'
       ],
       caseStudy: {
-        title: 'Fuse',
-        result: '200+ kandidaten',
-        description: 'We sourced and delivered 200+ qualified candidates directly into their ATS within the first quarter.'
+        id: 'sourcing-finance',
+        title: 'Fuuse',
+        result: '30+ Interviews',
+        description: 'Voor Fuuse hebben we de sourcing van Financial en Business Controllers volledig geoptimaliseerd.'
       }
     },
     'automation-ai': {
