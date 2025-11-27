@@ -73,9 +73,10 @@ const ServiceDetail: React.FC = () => {
         'Schaal je operaties zonder extra kosten'
       ],
       caseStudy: {
-        title: 'Generieke casus',
-        result: '40% efficiency gain',
-        description: 'Our automation and AI tools helped agencies reduce manual work by 40% while improving candidate quality.'
+        id: 'full-service-sales',
+        title: 'Rendement Recruiters',
+        result: '40 nieuwe plaatsingen',
+        description: 'Wij pakken de volledige funnel op: van lead tot match. Resultaat: 40 succesvolle plaatsingen in 12 maanden tijd.'
       }
     }
   };
