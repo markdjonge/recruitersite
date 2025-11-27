@@ -78,6 +78,30 @@ const ServiceDetail: React.FC = () => {
         result: '40 nieuwe plaatsingen',
         description: 'Wij pakken de volledige funnel op: van lead tot match. Resultaat: 40 succesvolle plaatsingen in 12 maanden tijd.'
       }
+    },
+    'full-service': {
+      title: 'Full Service',
+      subtitle: 'Volledige funnel: van lead tot match',
+      icon: Target,
+      description: 'Wij pakken de volledige funnel op: van lead tot match. Laat ons zowel opdrachtgevers als kandidaten sourced, zodat jij je volledig op matchen kunt focussen.',
+      hero_image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80',
+      process: [
+        { title: 'Leads en kandidaten sourcing', description: 'Wij benaderen proactief opdrachtgevers en identificeren toptalent tegelijkertijd.' },
+        { title: 'Parallel pipeline building', description: 'Maandelijks 25+ warme leads en 150+ gekwalificeerde kandidaten op dezelfde profielen.' },
+        { title: 'Matchingfocus', description: 'Jij focust je op matchen terwijl wij de pijpleiding vullen.' }
+      ],
+      benefits: [
+        'Breaks de klassieke kip-ei discussie',
+        'Consistente instroom van beide zijdes',
+        'Opdrachten vervuld binnen 4-6 weken',
+        'Schaal zonder back-office overhead'
+      ],
+      caseStudy: {
+        id: 'full-service-sales',
+        title: 'Rendement Recruiters',
+        result: '40 nieuwe plaatsingen',
+        description: 'Voor Rendement Recruiters hebben we de klassieke kip-ei discussie doorbroken. Waar veel bureaus moeten kiezen tussen sales of sourcing, hebben wij beide processen parallel opgezet.'
+      }
     }
   };
 
