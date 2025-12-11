@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
                       name="name" 
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Uw naam"
+                      placeholder="Je naam"
                       className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
                       required
                     />
@@ -114,7 +114,7 @@ const Contact: React.FC = () => {
                    Aanvraag versturen <ArrowRight />
                  </button>
                  <p className="text-center text-slate-500 text-sm mt-6">
-                    Wij respecteren uw privacy. Geen spam, beloofd.
+                    Wij respecteren je privacy. Geen spam, beloofd.
                  </p>
               </div>
            </form>
