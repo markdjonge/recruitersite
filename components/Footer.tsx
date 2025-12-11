@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
                 9713NP Groningen
               </p>
               <p>
-                <a href="mailto:info@linkedup.online" className="hover:text-white transition-colors">info@linkedup.online</a>
+                <a href="mailto:info@linkedup.online" className="text-slate-300 hover:text-brand-yellow transition-colors">info@linkedup.online</a>
               </p>
             </div>
           </div>
