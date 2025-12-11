@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-24 bg-white relative">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-16">
-           <h2 className="text-5xl font-black text-slate-900 mb-6">Start uw groei.</h2>
+           <h2 className="text-5xl font-black text-slate-900 mb-6">Start met groeien.</h2>
            <p className="text-xl text-slate-600">
              Klaar om de volgende stap te zetten? Laat uw gegevens achter voor een vrijblijvende strategiesessie.
            </p>
