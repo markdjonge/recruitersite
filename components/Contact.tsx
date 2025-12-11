@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
         <div className="text-center mb-16">
            <h2 className="text-5xl font-black text-slate-900 mb-6">Start met groeien.</h2>
            <p className="text-xl text-slate-600">
-             Klaar om de volgende stap te zetten? Laat uw gegevens achter voor een vrijblijvende strategiesessie.
+             Klaar om de volgende stap te zetten? Laat je gegevens achter voor een vrijblijvende strategiesessie.
            </p>
         </div>
 
