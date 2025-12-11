@@ -21,8 +21,8 @@ const StrategyGenerator: React.FC = () => {
       setResult(data);
 
       // Send to webhook (optional)
-      const webhookUrl = 'YOUR_WEBHOOK_URL_HERE';
-      if (webhookUrl && webhookUrl !== 'YOUR_WEBHOOK_URL_HERE') {
+      const webhookUrl = 'https://automation.linkedup.online/webhook/488010b6-178a-490a-9f1a-b218669cf39f';
+      if (webhookUrl) {
         try {
           await fetch(webhookUrl, {
             method: 'POST',

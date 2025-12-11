@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
 
     try {
       // Replace with your webhook URL
-      const webhookUrl = 'YOUR_WEBHOOK_URL_HERE';
+      const webhookUrl = 'https://automation.linkedup.online/webhook/488010b6-178a-490a-9f1a-b218669cf39f';
 
       const response = await fetch(webhookUrl, {
         method: 'POST',
