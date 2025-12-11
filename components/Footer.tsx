@@ -51,6 +51,26 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
+        <div className="py-8 grid md:grid-cols-2 gap-8 border-b border-slate-800 mb-8">
+          <div>
+            <h4 className="font-bold text-brand-yellow mb-4 uppercase tracking-wider text-sm">Contact</h4>
+            <div className="space-y-3 text-sm text-slate-300 font-medium">
+              <p>
+                LinkedUp<br />
+                Meidoornpad 42<br />
+                9713NP Groningen
+              </p>
+              <p>
+                <a href="mailto:info@linkedup.online" className="hover:text-white transition-colors">info@linkedup.online</a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <h4 className="font-bold text-brand-yellow mb-4 uppercase tracking-wider text-sm">Bedrijfsgegevens</h4>
+            <p className="text-sm text-slate-300 font-medium">KvK: 89715748</p>
+          </div>
+        </div>
+
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm font-medium">
           <p>© {new Date().getFullYear()} LinkedUp</p>
         </div>
