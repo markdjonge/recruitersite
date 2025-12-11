@@ -13,10 +13,35 @@ const Contact: React.FC = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Bedankt! We nemen contact op.');
-    setFormData({ name: '', email: '', company: '', phone: '' });
+
+    try {
+      // Replace with your webhook URL
+      const webhookUrl = 'YOUR_WEBHOOK_URL_HERE';
+
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          type: 'contact_form',
+          timestamp: new Date().toISOString(),
+          ...formData
+        })
+      });
+
+      if (response.ok) {
+        alert('Bedankt! We nemen contact op.');
+        setFormData({ name: '', email: '', company: '', phone: '' });
+      } else {
+        alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+      }
+    } catch (error) {
+      console.error('Webhook error:', error);
+      alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+    }
   };
 
   return (
