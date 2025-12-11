@@ -54,6 +54,29 @@ const Contact: React.FC = () => {
            </p>
         </div>
 
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="bg-brand-gray p-6 rounded-2xl">
+            <p className="text-sm font-bold text-slate-500 uppercase mb-3">Adres</p>
+            <p className="text-slate-900 font-medium text-sm leading-relaxed">
+              LinkedUp<br />
+              Meidoornpad 42<br />
+              9713NP Groningen
+            </p>
+          </div>
+          <div className="bg-brand-gray p-6 rounded-2xl">
+            <p className="text-sm font-bold text-slate-500 uppercase mb-3">Email</p>
+            <a href="mailto:info@linkedup.online" className="text-brand-yellow hover:text-yellow-600 font-bold text-sm transition-colors">
+              info@linkedup.online
+            </a>
+          </div>
+          <div className="bg-brand-gray p-6 rounded-2xl">
+            <p className="text-sm font-bold text-slate-500 uppercase mb-3">Bedrijfsgegevens</p>
+            <p className="text-slate-900 font-medium text-sm">
+              KvK: 89715748
+            </p>
+          </div>
+        </div>
+
         <div className="bg-brand-gray p-8 md:p-12 rounded-[3rem] shadow-sm">
            <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
