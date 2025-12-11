@@ -19,6 +19,27 @@ const StrategyGenerator: React.FC = () => {
     try {
       const data = await generateLeadStrategy(niche);
       setResult(data);
+
+      // Send to webhook (optional)
+      const webhookUrl = 'YOUR_WEBHOOK_URL_HERE';
+      if (webhookUrl && webhookUrl !== 'YOUR_WEBHOOK_URL_HERE') {
+        try {
+          await fetch(webhookUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              type: 'market_scan',
+              timestamp: new Date().toISOString(),
+              niche: niche,
+              result: data
+            })
+          });
+        } catch (webhookErr) {
+          console.error('Webhook error:', webhookErr);
+        }
+      }
     } catch (err) {
       setError('Analyse mislukt. Probeer het opnieuw.');
     } finally {
