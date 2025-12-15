@@ -11,9 +11,9 @@ const ContactPage: React.FC = () => {
             <div className="bg-brand-gray p-6 rounded-xl">
               <p className="text-sm font-bold text-slate-900 uppercase mb-3 tracking-wider">Adres</p>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
-                LinkedUp<br />
-                Meidoornpad 42<br />
-                9713NP Groningen
+                {contactInfo.company}<br />
+                {contactInfo.address.street}<br />
+                {contactInfo.address.postalCode} {contactInfo.address.city}
               </p>
             </div>
             <div className="bg-brand-gray p-6 rounded-xl">
