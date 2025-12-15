@@ -25,7 +25,7 @@ const ContactPage: React.FC = () => {
             <div className="bg-brand-gray p-6 rounded-xl">
               <p className="text-sm font-bold text-slate-900 uppercase mb-3 tracking-wider">Bedrijfsgegevens</p>
               <p className="text-slate-600 font-medium text-sm">
-                KvK: 89715748
+                KvK: {contactInfo.kvk}
               </p>
             </div>
           </div>
