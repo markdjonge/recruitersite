@@ -12,7 +12,7 @@ const ServiceDetail: React.FC = () => {
       subtitle: 'Warme leads van potentiële opdrachtgevers in jouw niche',
       icon: Target,
       description: 'Wij benaderen proactief potentiële opdrachtgevers in jouw niche. Geen koude acquisitie meer voor jou, maar warme leads en afspraken in je agenda.',
-      hero_image: 'https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F0c56f79743dd4f0da0c5c9dcaa0921f5?format=webp&width=800',
+      hero_image: 'https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F674d3a30bcb4424dbc5b5bf5fea291f2?format=webp&width=800',
       process: [
         { title: 'Markt mapping', description: 'Wij analyseren jouw doelmarkt en identificeren de beste prospects.' },
         { title: 'Outbound campagnes', description: 'Gepersonaliseerde benadering via LinkedIn, email en telefoon.' },
