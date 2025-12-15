@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Twitter } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -27,8 +27,8 @@ const Footer: React.FC = () => {
             <h4 className="font-bold text-brand-yellow mb-6 uppercase tracking-wider text-sm">Diensten</h4>
             <ul className="space-y-4 text-sm font-medium text-slate-300">
               <li><Link to="/diensten" className="hover:text-white transition-colors">Leadgeneratie</Link></li>
-              <li><Link to="/diensten" className="hover:text-white transition-colors">Data Verrijking</Link></li>
-              <li><Link to="/diensten" className="hover:text-white transition-colors">Consultancy</Link></li>
+              <li><Link to="/diensten" className="hover:text-white transition-colors">Sourcing</Link></li>
+              <li><Link to="/diensten" className="hover:text-white transition-colors">Automation & AI</Link></li>
             </ul>
           </div>
 
@@ -37,7 +37,6 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-sm font-medium text-slate-300">
               <li><Link to="/cases" className="hover:text-white transition-colors">Cases</Link></li>
               <li><Link to="/over-ons" className="hover:text-white transition-colors">Team</Link></li>
-              <li><Link to="/werken-bij" className="hover:text-white transition-colors">Werken bij</Link></li>
               <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -45,22 +44,15 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-brand-yellow mb-6 uppercase tracking-wider text-sm">Socials</h4>
             <div className="flex gap-4">
-              <a href="#" className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-yellow hover:text-slate-900 transition-all">
+              <a href="https://www.linkedin.com/company/90763893/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-yellow hover:text-slate-900 transition-all">
                 <Linkedin size={20} />
-              </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-yellow hover:text-slate-900 transition-all">
-                <Twitter size={20} />
               </a>
             </div>
           </div>
         </div>
         
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm font-medium">
-          <p>© {new Date().getFullYear()} LinkedUp B.V.</p>
-          <div className="flex gap-8">
-            <Link to="/privacy" className="hover:text-white">Privacy</Link>
-            <Link to="/voorwaarden" className="hover:text-white">Algemene Voorwaarden</Link>
-          </div>
+          <p>© {new Date().getFullYear()} LinkedUp</p>
         </div>
       </div>
     </footer>

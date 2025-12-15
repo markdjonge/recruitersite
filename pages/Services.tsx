@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Users, BarChart3, ArrowRight } from 'lucide-react';
+import { Target, Users, Bot, Briefcase, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Services: React.FC = () => {
@@ -14,7 +14,7 @@ const Services: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-20">
-          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300 flex flex-col">
             <div className="w-16 h-16 bg-brand-yellow rounded-2xl flex items-center justify-center mb-6 text-slate-900">
               <Target size={32} strokeWidth={2.5} />
             </div>
@@ -22,41 +22,72 @@ const Services: React.FC = () => {
             <p className="text-slate-600 mb-6 leading-relaxed">
               Wij benaderen proactief potentiële opdrachtgevers in jouw niche. Geen koude acquisitie meer voor jou, maar warme leads en afspraken in je agenda.
             </p>
-            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500">
+            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500 flex-1">
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Markt mapping</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Outbound campagnes</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Afspraken planning</li>
             </ul>
+            <Link to="/diensten/leadgeneratie" className="w-full bg-brand-yellow text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2">
+              Lees meer
+              <ArrowRight size={20} />
+            </Link>
           </div>
 
-          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300 flex flex-col">
             <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 text-brand-yellow">
               <Users size={32} strokeWidth={2.5} />
             </div>
             <h3 className="text-2xl font-black text-slate-900 mb-4">Sourcing</h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              Vind het talent dat niet op jobboards kijkt. Wij gebruiken geavanceerde sourcing technieken om passieve kandidaten te vinden en te interesseren.
+              Bereik talent nog vóór ze 'Open to Work' staan. Wij identificeren kandidaten die hun profiel optimaliseren en bereiken ze via slimme cross-channel campagnes, direct geleverd in jouw ATS.
             </p>
-            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500">
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Boolean search experts</li>
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Niche communities</li>
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Pre-screening</li>
+            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500 flex-1">
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Pre-Open to Work signalen</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Meta & LinkedIn outreach</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-900"></div>Directe ATS onboarding</li>
             </ul>
+            <Link to="/diensten/sourcing" className="w-full bg-brand-yellow text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2">
+              Lees meer
+              <ArrowRight size={20} />
+            </Link>
           </div>
 
-          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300 flex flex-col">
             <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-6 text-slate-900">
-              <BarChart3 size={32} strokeWidth={2.5} />
+              <Bot size={32} strokeWidth={2.5} />
             </div>
-            <h3 className="text-2xl font-black text-slate-900 mb-4">Consultancy</h3>
+            <h3 className="text-2xl font-black text-slate-900 mb-4">Automation & AI</h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              Advies over je positionering, pricing en groeistrategie. Wij helpen je om je bureau schaalbaar te maken.
+              Automatiseer je recruitment tech stack. Van het syncen van 'Open to Work' profielen naar je ATS tot AI-matching en het spotten van sales kansen bij klanten.
             </p>
-            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500">
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>Groei strategie</li>
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>Tooling advies</li>
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>Training</li>
+            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500 flex-1">
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>LinkedIn & ATS Sync</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>Open vacature detectie</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-slate-400"></div>AI Kandidaat Matching</li>
             </ul>
+            <Link to="/diensten/automation-ai" className="w-full bg-brand-yellow text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2">
+              Lees meer
+              <ArrowRight size={20} />
+            </Link>
+          </div>
+
+          <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+            <div className="w-16 h-16 bg-brand-yellow rounded-2xl flex items-center justify-center mb-6 text-slate-900">
+              <Briefcase size={32} strokeWidth={2.5} />
+            </div>
+            <h3 className="text-2xl font-black text-slate-900 mb-4">Full Service</h3>
+            <p className="text-slate-600 mb-6 leading-relaxed">
+              Wij pakken de volledige funnel op: van lead tot match. Laat ons zowel opdrachtgevers als kandidaten sourced, zodat jij je volledig op matchen kunt focussen.
+            </p>
+            <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500 flex-1">
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Leads én kandidaten</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Complete funnel management</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Consistente instroom</li>
+            </ul>
+            <Link to="/diensten/full-service" className="w-full bg-brand-yellow text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2">
+              Lees meer
+              <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
 

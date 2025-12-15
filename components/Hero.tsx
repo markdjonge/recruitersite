@@ -13,9 +13,9 @@ const Hero: React.FC = () => {
           
           <div className="max-w-3xl">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-slate-900 mb-8 leading-[0.9]">
-              Jij de business,<br />
+              Wij de match,<br />
               <span className="relative inline-block">
-                wij de match.
+                jij de business.
                 <svg className="absolute w-full h-4 -bottom-1 left-0 text-brand-yellow -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
                 </svg>
@@ -50,9 +50,9 @@ const Hero: React.FC = () => {
 
           <div className="relative hidden lg:block">
              <div className="aspect-square rounded-[3rem] overflow-hidden relative shadow-2xl border-4 border-white">
-                 <img 
-                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" 
-                    alt="Team collaboration" 
+                 <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Fff53698eb8ff4c169cfd3f54a564a66f?format=webp&width=800"
+                    alt="Team collaboration"
                     className="object-cover w-full h-full"
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
                  </div>
              </div>
              {/* Floating Badge */}
-             <div className="absolute -bottom-10 -right-10 bg-white p-8 rounded-3xl shadow-xl border border-slate-100 max-w-xs">
+             <div className="absolute -bottom-10 -right-10 bg-white p-8 rounded-3xl shadow-xl border border-slate-100 max-w-xs hidden">
                  <p className="text-5xl font-black text-slate-900 mb-2">2-zijdig</p>
                  <p className="text-slate-600 font-medium">Groei in opdrachtgevers én kandidaten.</p>
              </div>

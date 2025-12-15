@@ -43,14 +43,10 @@ const Header: React.FC = () => {
           <Link to="/diensten" className={`text-base font-bold transition-colors ${isActive('/diensten')}`}>Onze diensten</Link>
           <Link to="/cases" className={`text-base font-bold transition-colors ${isActive('/cases')}`}>Cases</Link>
           <Link to="/over-ons" className={`text-base font-bold transition-colors ${isActive('/over-ons')}`}>Over ons</Link>
-          <Link to="/werken-bij" className={`text-base font-bold transition-colors ${isActive('/werken-bij')}`}>Werken bij LinkedUp</Link>
         </nav>
 
         {/* Right Side - Phone & CTA */}
         <div className="hidden md:flex items-center gap-6">
-           <a href="tel:0887624010" className="text-slate-900 font-bold hover:underline decoration-brand-yellow decoration-2 underline-offset-4 hidden xl:block">
-             020 – 123 45 67
-           </a>
            <Link to="/contact" className="bg-slate-900 text-white px-8 py-3 rounded-full text-sm font-bold hover:bg-slate-800 transition-colors shadow-lg shadow-slate-900/10">
              Contact opnemen
            </Link>
@@ -68,7 +64,6 @@ const Header: React.FC = () => {
           <Link to="/diensten" className="text-xl font-bold text-slate-900" onClick={closeMenu}>Onze diensten</Link>
           <Link to="/cases" className="text-xl font-bold text-slate-900" onClick={closeMenu}>Cases</Link>
           <Link to="/over-ons" className="text-xl font-bold text-slate-900" onClick={closeMenu}>Over ons</Link>
-          <Link to="/werken-bij" className="text-xl font-bold text-slate-900" onClick={closeMenu}>Werken bij</Link>
           <Link to="/contact" className="bg-brand-yellow text-slate-900 text-center py-4 rounded-full font-bold mt-4" onClick={closeMenu}>
              Contact opnemen
            </Link>

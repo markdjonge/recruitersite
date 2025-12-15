@@ -13,19 +13,44 @@ const Contact: React.FC = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Bedankt! We nemen contact op.');
-    setFormData({ name: '', email: '', company: '', phone: '' });
+
+    try {
+      // Replace with your webhook URL
+      const webhookUrl = 'https://automation.linkedup.online/webhook/488010b6-178a-490a-9f1a-b218669cf39f';
+
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          type: 'contact_form',
+          timestamp: new Date().toISOString(),
+          ...formData
+        })
+      });
+
+      if (response.ok) {
+        alert('Bedankt! We nemen contact op.');
+        setFormData({ name: '', email: '', company: '', phone: '' });
+      } else {
+        alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+      }
+    } catch (error) {
+      console.error('Webhook error:', error);
+      alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+    }
   };
 
   return (
     <section id="contact" className="py-24 bg-white relative">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-16">
-           <h2 className="text-5xl font-black text-slate-900 mb-6">Start uw groei.</h2>
+           <h2 className="text-5xl font-black text-slate-900 mb-6">Start met groeien.</h2>
            <p className="text-xl text-slate-600">
-             Klaar om de volgende stap te zetten? Laat uw gegevens achter voor een vrijblijvende strategiesessie.
+             Klaar om de volgende stap te zetten? Laat je gegevens achter voor een vrijblijvende strategiesessie.
            </p>
         </div>
 
@@ -39,7 +64,7 @@ const Contact: React.FC = () => {
                       name="name" 
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Uw naam"
+                      placeholder="Je naam"
                       className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
                       required
                     />
@@ -89,7 +114,7 @@ const Contact: React.FC = () => {
                    Aanvraag versturen <ArrowRight />
                  </button>
                  <p className="text-center text-slate-500 text-sm mt-6">
-                    Wij respecteren uw privacy. Geen spam, beloofd.
+                    Wij respecteren je privacy. Geen spam, beloofd.
                  </p>
               </div>
            </form>

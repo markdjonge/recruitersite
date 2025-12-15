@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
+import ServiceDetail from './pages/ServiceDetail';
 import Cases from './pages/Cases';
 import CaseDetail from './pages/CaseDetail';
 import About from './pages/About';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/diensten" element={<Services />} />
+          <Route path="/diensten/:service" element={<ServiceDetail />} />
           <Route path="/cases" element={<Cases />} />
           <Route path="/cases/:id" element={<CaseDetail />} />
           <Route path="/over-ons" element={<About />} />

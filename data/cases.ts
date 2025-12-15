@@ -1,29 +1,32 @@
 export const cases = [
   {
-    id: "bouw-recruitment",
-    category: "Business Development | Bouw",
+    id: "leadgeneratie-techniek",
+    category: "Leadgeneratie | Techniek",
     stat: "15 Nieuwe Klanten",
-    title: "Structurele instroom van vacatures voor een bouw-recruiter.",
-    desc: "Wij namen de koude acquisitie uit handen. Resultaat: 15 nieuwe aannemers die structureel personeel inhuren.",
-    fullContent: "Voor deze klant in de bouwsector hebben wij een volledige outbound sales funnel opgezet. Door proactief aannemers te benaderen die net grote projecten hadden gewonnen, konden we direct inspelen op hun personeelsbehoefte. Dit resulteerde in 15 nieuwe, structurele partnerschappen in slechts 3 maanden tijd.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
+    title: "Structurele instroom van vacatures voor CareerScout.",
+    desc: "Wij namen de outreach in Nederland volledig uit handen. Resultaat: 15 nieuwe opdrachtgevers die actief op zoek zijn naar monteurs en engineers.",
+    fullContent: "Voor CareerScout hebben wij een gerichte outbound strategie opgezet om de Nederlandse markt te veroveren. Door proactief bedrijven te benaderen met een sterke behoefte aan technisch personeel, konden we direct inspelen op de schaarste aan monteurs en engineers.\n\nDeze aanpak zorgde ervoor dat CareerScout niet hoefde te wachten op inkomende leads, maar direct aan tafel zat bij de juiste partijen.Dit resulteerde in 15 nieuwe, structurele partnerschappen met bedrijven in de techniek.",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F53cf40543c914702990db72517b37ddb?format=webp&width=800"
   },
   {
-    id: "it-sourcing-fuuse",
-    category: "Sourcing | Finance & Control",
-    stat: "30+ Interviews/mnd",
+    id: "sourcing-finance",
+    category: "Sourcing | Finance",
+    stat: "30+ Interviews",
     title: "Fuuse: Opschalen van Financial Controllers.",
     desc: "Voor Fuuse hebben we de sourcing van Financial en Business Controllers volledig geoptimaliseerd.",
     fullContent: "Fuuse had moeite om kwalitatieve Financial Controllers te vinden via de standaard kanalen. Wij hebben een sourcing strategie uitgerold die zich richt op passief talent via niche communities en direct search. Resultaat: Een constante stroom van 30 gekwalificeerde kandidaten per maand in hun interview funnel.",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F984936c4e46e4cf2a513d42cb2552976?format=webp&width=800"
   },
   {
-    id: "zorg-scaleup",
-    category: "Full Service | Zorg",
-    stat: "200% Groei",
-    title: "Verdubbeling van de business in 12 maanden.",
-    desc: "Door zowel de verkoop (zorginstellingen) als inkoop (verpleegkundigen) te ondersteunen, kon deze start-up vliegen.",
-    fullContent: "Deze startup in de zorg liep tegen het kip-ei probleem aan: te weinig kandidaten voor de klanten, en te weinig klanten voor de kandidaten. LinkedUp heeft beide kanten opgepakt. We voerden sales gesprekken met zorginstellingen én sourceten verpleegkundigen. Hierdoor kon de agency zich focussen op het matchen, wat leidde tot een verdubbeling van de omzet.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800"
+    id: "full-service-sales",
+    category: "Full Service | Sales",
+    stat: "40 nieuwe plaatsingen",
+    title: "Consistente instroom van leads én kandidaten.",
+    desc: "Wij pakken de volledige funnel op: van lead tot match. Resultaat: 40 succesvolle plaatsingen in 12 maanden tijd.",
+    fullContent: "Voor Rendement Recruiters hebben we de klassieke kip-ei discussie doorbroken. Waar veel bureaus moeten kiezen tussen sales of sourcing, hebben wij beide processen parallel opgezet.\n\nWij leveren maandelijks 25+ warme leads aan, wat resulteert in gemiddeld 4 nieuwe opdrachten per maand. Tegelijkertijd sourcen we 150 kandidaten op deze profielen. Door deze dubbele focus kan Rendement Recruiters zich volledig richten op het matchen. Dit zorgde niet alleen voor 40 plaatsingen in het afgelopen jaar, maar garandeerde ook dat opdrachten consequent binnen 4 tot 6 weken werden vervuld.",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F3f40c93269434641a7fb8a21c5eab57d?format=webp&width=800"
   }
 ];

@@ -36,7 +36,9 @@ const CaseDetail: React.FC = () => {
                  </p>
                  <div className="prose prose-lg text-slate-600">
                     <p className="mb-6">{caseItem.desc}</p>
-                    <p>{caseItem.fullContent}</p>
+                    {caseItem.fullContent.split('\n\n').map((paragraph, index) => (
+                      <p key={index} className={index < caseItem.fullContent.split('\n\n').length - 1 ? 'mb-6' : ''}>{paragraph}</p>
+                    ))}
                  </div>
                  
                  <div className="mt-12 flex gap-4">
@@ -47,8 +49,8 @@ const CaseDetail: React.FC = () => {
             </div>
             
             <div className="relative">
-                <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl">
-                    <img src={caseItem.image} alt={caseItem.title} className="w-full h-full object-cover" />
+                <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl bg-brand-yellow flex items-center justify-center p-12">
+                    <img src={caseItem.logo} alt={caseItem.title} className="max-w-64 max-h-64 object-contain" />
                 </div>
                 {/* Float Card */}
                 <div className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur-sm p-6 rounded-2xl border border-white shadow-lg">
