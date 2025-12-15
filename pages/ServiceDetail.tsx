@@ -127,18 +127,18 @@ const ServiceDetail: React.FC = () => {
       {/* Hero Section */}
       <section className="mb-20">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
+          <div className="grid xl:grid-cols-2 gap-12 items-center mb-12">
             <div>
               <div className="w-16 h-16 bg-brand-yellow rounded-2xl flex items-center justify-center mb-6 text-slate-900">
                 <IconComponent size={32} strokeWidth={2.5} />
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 mb-4 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 mb-4 leading-tight">
                 {currentService.title}
               </h1>
-              <p className="text-xl md:text-2xl text-slate-600 mb-8 font-medium">
+              <p className="text-lg sm:text-xl lg:text-2xl text-slate-600 mb-8 font-medium">
                 {currentService.subtitle}
               </p>
-              <p className="text-base md:text-lg text-slate-600 mb-10 leading-relaxed max-w-xl">
+              <p className="text-base sm:text-lg text-slate-600 mb-10 leading-relaxed max-w-xl">
                 {currentService.description}
               </p>
               <Link to="/contact" className="inline-flex items-center gap-2 bg-brand-yellow text-slate-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition-colors shadow-lg">
@@ -146,7 +146,7 @@ const ServiceDetail: React.FC = () => {
                 <ArrowRight size={24} />
               </Link>
             </div>
-            <div className="rounded-3xl overflow-hidden h-64 sm:h-80 md:h-96 lg:h-full">
+            <div className="rounded-3xl overflow-hidden h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-full mt-8 xl:mt-0">
               <img
                 src={currentService.hero_image}
                 alt={currentService.title}
