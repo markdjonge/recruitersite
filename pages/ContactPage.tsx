@@ -5,7 +5,7 @@ import { contactInfo } from '../data/contact';
 const ContactPage: React.FC = () => {
   return (
     <div className="pt-20">
-      <div className="py-12 bg-white">
+      <div className="py-12 bg-white hidden">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-brand-gray p-6 rounded-xl">
