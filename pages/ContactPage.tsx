@@ -18,8 +18,8 @@ const ContactPage: React.FC = () => {
             </div>
             <div className="bg-brand-gray p-6 rounded-xl">
               <p className="text-sm font-bold text-slate-900 uppercase mb-3 tracking-wider">Email</p>
-              <a href="mailto:info@linkedup.online" className="text-slate-900 hover:text-brand-yellow font-bold text-sm transition-colors break-all">
-                info@linkedup.online
+              <a href={`mailto:${contactInfo.email}`} className="text-slate-900 hover:text-brand-yellow font-bold text-sm transition-colors break-all">
+                {contactInfo.email}
               </a>
             </div>
             <div className="bg-brand-gray p-6 rounded-xl">
