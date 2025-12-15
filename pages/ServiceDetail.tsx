@@ -36,7 +36,7 @@ const ServiceDetail: React.FC = () => {
       subtitle: 'Toptalent bereiken vóór ze "Open to Work" staan',
       icon: Users,
       description: 'Bereik talent nog vóór ze "Open to Work" staan. Wij identificeren kandidaten die hun profiel optimaliseren en bereiken ze via slimme cross-channel campagnes.',
-      hero_image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80',
+      hero_image: 'https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F674d3a30bcb4424dbc5b5bf5fea291f2?format=webp&width=800',
       process: [
         { title: 'Pre-Open to Work signalen', description: 'Wij detecteren kandidaten die binnenkort gaan switchen.' },
         { title: 'Meta & LinkedIn outreach', description: 'Multi-channel benadering voor maximale reach en response rate.' },
@@ -60,7 +60,7 @@ const ServiceDetail: React.FC = () => {
       subtitle: 'Automatiseer je recruitment tech stack',
       icon: Bot,
       description: 'Automatiseer je recruitment tech stack. Van het syncen van "Open to Work" profielen naar je ATS tot AI-matching en het spotten van sales kansen bij klanten.',
-      hero_image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80',
+      hero_image: 'https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F674d3a30bcb4424dbc5b5bf5fea291f2?format=webp&width=800',
       process: [
         { title: 'LinkedIn & ATS Sync', description: 'Automatische synchronisatie tussen LinkedIn en je recruitment platform.' },
         { title: 'Open vacature detectie', description: 'AI-systeem dat open vacatures detecteert bij je klanten.' },
@@ -84,7 +84,7 @@ const ServiceDetail: React.FC = () => {
       subtitle: 'Volledige funnel: van lead tot match',
       icon: Target,
       description: 'Wij pakken de volledige funnel op: van lead tot match. Laat ons zowel opdrachtgevers als kandidaten sourced, zodat jij je volledig op matchen kunt focussen.',
-      hero_image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80',
+      hero_image: 'https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F674d3a30bcb4424dbc5b5bf5fea291f2?format=webp&width=800',
       process: [
         { title: 'Leads en kandidaten sourcing', description: 'Wij benaderen proactief opdrachtgevers en identificeren toptalent tegelijkertijd.' },
         { title: 'Parallel pipeline building', description: 'Maandelijks 25+ warme leads en 150+ gekwalificeerde kandidaten op dezelfde profielen.' },
