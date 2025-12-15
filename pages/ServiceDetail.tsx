@@ -21,7 +21,7 @@ const ServiceDetail: React.FC = () => {
       benefits: [
         'Bespaar 10+ uren per week aan acquisitie',
         'Warme leads met hogere conversion rate',
-        'Consistente pijplijn van opdrachtgevers',
+        'Consistente pipeline van nieuwe opdrachtgevers',
         'Focus op je core business'
       ],
       caseStudy: {
