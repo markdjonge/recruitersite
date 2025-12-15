@@ -1,5 +1,6 @@
 import React from 'react';
 import Contact from '../components/Contact';
+import { contactInfo } from '../data/contact';
 
 const ContactPage: React.FC = () => {
   return (
