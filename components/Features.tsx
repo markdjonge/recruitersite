@@ -12,7 +12,7 @@ const Features: React.FC = () => {
           <div>
              <h2 className="text-5xl md:text-6xl font-black text-slate-900 mb-4">Track record</h2>
              <p className="text-xl text-slate-600 max-w-xl">
-               Wij zijn geen tool, maar jouw groeipartner. Bekijk hoe wij agencies helpen aan business én kandidaten.
+               We laten laten onze success voor zichzelf spreken. Bekijk hoe we agencies helpen aan opdrachten én kandidaten.
              </p>
           </div>
           <Link to="/cases" className="text-slate-900 font-bold text-lg flex items-center gap-2 hover:translate-x-1 transition-transform border-b-2 border-brand-yellow pb-1">

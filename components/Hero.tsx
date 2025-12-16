@@ -3,16 +3,16 @@ import { ChevronRight, Users, Briefcase } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-white pt-32 pb-20 overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center bg-white pt-32 pb-10 lg:pb-20 overflow-hidden">
       
       {/* Decorative Elements - Yellow Shapes */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-gray -skew-x-12 translate-x-32 hidden lg:block z-0"></div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-16 items-center">
+
           <div className="max-w-3xl">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-slate-900 mb-8 leading-[0.9]">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-slate-900 mb-8 leading-[1]">
               Wij de match,<br />
               <span className="relative inline-block">
                 jij de business.
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
                 <ChevronRight size={20} />
               </a>
             </div>
-            
+
             <div className="mt-16 flex items-center gap-8 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                <div className="flex items-center gap-2">
                  <Briefcase size={18} className="text-brand-yellow" />
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative hidden lg:block">
+          <div className="relative">
              <div className="aspect-square rounded-[3rem] overflow-hidden relative shadow-2xl border-4 border-white">
                  <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Fff53698eb8ff4c169cfd3f54a564a66f?format=webp&width=800"
@@ -56,9 +56,9 @@ const Hero: React.FC = () => {
                     className="object-cover w-full h-full"
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                 <div className="absolute bottom-10 left-10 text-white">
-                    <p className="text-brand-yellow font-bold uppercase tracking-wider mb-2">Full-Service Partner</p>
-                    <h3 className="text-3xl font-bold">Jouw externe sales- <br/>en sourcingsafdeling.</h3>
+                 <div className="absolute bottom-4 md:bottom-10 lg:bottom-10 left-4 md:left-8 lg:left-10 text-white">
+                    <p className="text-brand-yellow font-bold uppercase tracking-wider mb-3 md:mb-5 text-sm md:text-3xl lg:text-lg">Full-Service Partner</p>
+                    <h3 className="text-xl md:text-6xl lg:text-3xl font-bold leading-tight">Jouw externe sales- <br/>en sourcingsafdeling.</h3>
                  </div>
              </div>
              {/* Floating Badge */}

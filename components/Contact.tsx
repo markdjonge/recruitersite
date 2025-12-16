@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +8,9 @@ const Contact: React.FC = () => {
     company: '',
     phone: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -15,9 +18,10 @@ const Contact: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitError(false);
 
     try {
-      // Replace with your webhook URL
       const webhookUrl = 'https://automation.linkedup.online/webhook/488010b6-178a-490a-9f1a-b218669cf39f';
 
       const response = await fetch(webhookUrl, {
@@ -33,15 +37,23 @@ const Contact: React.FC = () => {
       });
 
       if (response.ok) {
-        alert('Bedankt! We nemen contact op.');
+        setSubmitSuccess(true);
         setFormData({ name: '', email: '', company: '', phone: '' });
+        setTimeout(() => setSubmitSuccess(false), 5000);
       } else {
-        alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+        setSubmitError(true);
       }
     } catch (error) {
       console.error('Webhook error:', error);
-      alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+      setSubmitError(true);
+    } finally {
+      setIsSubmitting(false);
     }
+  };
+
+  const resetForm = () => {
+    setSubmitSuccess(false);
+    setFormData({ name: '', email: '', company: '', phone: '' });
   };
 
   return (
@@ -55,69 +67,100 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="bg-brand-gray p-8 md:p-12 rounded-[3rem] shadow-sm">
-           <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                 <div>
-                    <label className="block text-sm font-bold text-slate-900 mb-2 uppercase">Naam</label>
-                    <input 
-                      type="text" 
-                      name="name" 
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Je naam"
-                      className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
-                      required
-                    />
+           {submitSuccess ? (
+              <div className="text-center py-12">
+                 <div className="flex justify-center mb-6">
+                    <div className="bg-brand-yellow p-4 rounded-full">
+                       <Check size={48} className="text-slate-900" strokeWidth={3} />
+                    </div>
                  </div>
-                 <div>
-                    <label className="block text-sm font-bold text-slate-900 mb-2 uppercase">Bedrijf</label>
-                    <input 
-                      type="text" 
-                      name="company" 
-                      value={formData.company}
-                      onChange={handleChange}
-                      placeholder="Bedrijfsnaam"
-                      className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
-                      required
-                    />
-                 </div>
-              </div>
-
-              <div className="space-y-6">
-                 <div>
-                    <label className="block text-sm font-bold text-slate-900 mb-2 uppercase">E-mail</label>
-                    <input 
-                      type="email" 
-                      name="email" 
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="naam@bedrijf.nl"
-                      className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
-                      required
-                    />
-                 </div>
-                 <div>
-                    <label className="block text-sm font-bold text-slate-900 mb-2 uppercase">Telefoon</label>
-                    <input 
-                      type="tel" 
-                      name="phone" 
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="06 12345678"
-                      className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
-                    />
-                 </div>
-              </div>
-
-              <div className="md:col-span-2 pt-4">
-                 <button type="submit" className="w-full bg-slate-900 text-white font-bold text-xl py-5 rounded-full hover:bg-slate-800 transition-all shadow-xl flex items-center justify-center gap-3">
-                   Aanvraag versturen <ArrowRight />
-                 </button>
-                 <p className="text-center text-slate-500 text-sm mt-6">
-                    Wij respecteren je privacy. Geen spam, beloofd.
+                 <h3 className="text-3xl font-black text-slate-900 mb-4">Bedankt!</h3>
+                 <p className="text-xl text-slate-600">
+                    We hebben je aanvraag ontvangen en nemen snel contact op.
                  </p>
               </div>
-           </form>
+           ) : submitError ? (
+              <div className="text-center py-12">
+                 <h3 className="text-2xl font-black text-slate-900 mb-4">Oeps!</h3>
+                 <p className="text-lg text-slate-600 mb-8">
+                    Er is iets misgegaan. Probeer het later opnieuw of neem direct contact op.
+                 </p>
+                 <button
+                    onClick={() => setSubmitError(false)}
+                    className="px-8 py-3 bg-slate-900 text-white font-bold rounded-full hover:bg-slate-800 transition-all"
+                 >
+                    Terug naar formulier
+                 </button>
+              </div>
+           ) : (
+              <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-8">
+                 <div className="space-y-6">
+                    <div>
+                       <label className="block text-sm font-bold text-slate-900 mb-2 uppercase">Naam</label>
+                       <input
+                         type="text"
+                         name="name"
+                         value={formData.name}
+                         onChange={handleChange}
+                         placeholder="Je naam"
+                         className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
+                         required
+                       />
+                    </div>
+                    <div>
+                       <label className="block text-sm font-bold text-slate-900 mb-2 uppercase">Bedrijf</label>
+                       <input
+                         type="text"
+                         name="company"
+                         value={formData.company}
+                         onChange={handleChange}
+                         placeholder="Bedrijfsnaam"
+                         className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
+                         required
+                       />
+                    </div>
+                 </div>
+
+                 <div className="space-y-6">
+                    <div>
+                       <label className="block text-sm font-bold text-slate-900 mb-2 uppercase">E-mail</label>
+                       <input
+                         type="email"
+                         name="email"
+                         value={formData.email}
+                         onChange={handleChange}
+                         placeholder="naam@bedrijf.nl"
+                         className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
+                         required
+                       />
+                    </div>
+                    <div>
+                       <label className="block text-sm font-bold text-slate-900 mb-2 uppercase">Telefoon</label>
+                       <input
+                         type="tel"
+                         name="phone"
+                         value={formData.phone}
+                         onChange={handleChange}
+                         placeholder="06 12345678"
+                         className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
+                       />
+                    </div>
+                 </div>
+
+                 <div className="md:col-span-2 pt-4">
+                    <button
+                       type="submit"
+                       disabled={isSubmitting}
+                       className="w-full bg-slate-900 text-white font-bold text-xl py-5 rounded-full hover:bg-slate-800 transition-all shadow-xl flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                       {isSubmitting ? 'Versturen...' : 'Aanvraag versturen'} <ArrowRight />
+                    </button>
+                    <p className="text-center text-slate-500 text-sm mt-6">
+                       Wij respecteren je privacy. Geen spam, beloofd.
+                    </p>
+                 </div>
+              </form>
+           )}
         </div>
       </div>
     </section>

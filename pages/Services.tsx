@@ -9,7 +9,7 @@ const Services: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-black text-slate-900 mb-6">Onze Diensten.</h1>
           <p className="text-xl text-slate-600 leading-relaxed">
-            Wij zijn het verlengstuk van jouw recruitmentbureau. Of je nu meer opdrachtgevers nodig hebt, of worstelt om de juiste kandidaten te vinden: wij leveren de resources.
+            Wij zijn het verlengstuk van jouw recruitmentbureau. Of je nu meer opdrachtgevers nodig hebt, of worstelt om de juiste kandidaten te vinden: wij krijgen je aan tafel.
           </p>
         </div>
 
