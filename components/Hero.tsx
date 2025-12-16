@@ -56,9 +56,9 @@ const Hero: React.FC = () => {
                     className="object-cover w-full h-full"
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                 <div className="absolute bottom-4 md:bottom-8 lg:bottom-10 left-4 md:left-8 lg:left-10 text-white">
-                    <p className="text-brand-yellow font-bold uppercase tracking-wider mb-2 md:mb-4 text-base md:text-2xl lg:text-lg">Full-Service Partner</p>
-                    <h3 className="text-xl md:text-5xl lg:text-3xl font-bold leading-tight">Jouw externe sales- <br/>en sourcingsafdeling.</h3>
+                 <div className="absolute bottom-4 md:bottom-10 lg:bottom-10 left-4 md:left-8 lg:left-10 text-white">
+                    <p className="text-brand-yellow font-bold uppercase tracking-wider mb-3 md:mb-5 text-sm md:text-3xl lg:text-lg">Full-Service Partner</p>
+                    <h3 className="text-xl md:text-6xl lg:text-3xl font-bold leading-tight">Jouw externe sales- <br/>en sourcingsafdeling.</h3>
                  </div>
              </div>
              {/* Floating Badge */}
