@@ -20,10 +20,6 @@ const About: React.FC = () => {
                    Daarom hebben wij LinkedUp opgericht. Wij zijn jouw externe motor voor business development en sourcing. Zodat jij kunt doen waar je goed in bent.
                 </p>
              </div>
-             <div className="grid grid-cols-2 gap-4">
-                 <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=600" className="rounded-2xl mt-12 shadow-xl" alt="Office vibe" />
-                 <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600" className="rounded-2xl shadow-xl" alt="Meeting" />
-             </div>
         </div>
 
         {/* Team */}
