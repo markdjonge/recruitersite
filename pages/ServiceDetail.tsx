@@ -19,9 +19,9 @@ const ServiceDetail: React.FC = () => {
         { title: 'Afspraken planning', description: 'Wij zorgen dat de leads rechtstreeks in je agenda komen.' }
       ],
       benefits: [
-        'Bespaar 10+ uren per week aan acquisitie',
-        'Warme leads met hogere conversion rate',
-        'Consistente pipeline van nieuwe opdrachtgevers',
+        'Iedere maand 20-30 warme leads',
+        'Warme leads met hoog conversion ratio',
+        '4-6 nieuwe opdrachten per maand',
         'Focus op je core business'
       ],
       caseStudy: {
