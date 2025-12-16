@@ -3,7 +3,7 @@ import { ChevronRight, Users, Briefcase } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-white pt-32 pb-20 overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center bg-white pt-32 pb-10 lg:pb-20 overflow-hidden">
       
       {/* Decorative Elements - Yellow Shapes */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-gray -skew-x-12 translate-x-32 hidden lg:block z-0"></div>
