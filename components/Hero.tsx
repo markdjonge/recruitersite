@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                  <div className="absolute bottom-4 md:bottom-8 lg:bottom-10 left-4 md:left-8 lg:left-10 text-white">
-                    <p className="text-brand-yellow font-bold uppercase tracking-wider mb-1 md:mb-2 text-xs md:text-sm lg:text-base">Full-Service Partner</p>
+                    <p className="text-brand-yellow font-bold uppercase tracking-wider mb-2 md:mb-3 text-sm md:text-base lg:text-lg">Full-Service Partner</p>
                     <h3 className="text-lg md:text-2xl lg:text-3xl font-bold leading-tight">Jouw externe sales- <br/>en sourcingsafdeling.</h3>
                  </div>
              </div>
