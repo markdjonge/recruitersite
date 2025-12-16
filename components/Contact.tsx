@@ -75,15 +75,9 @@ const Contact: React.FC = () => {
                     </div>
                  </div>
                  <h3 className="text-3xl font-black text-slate-900 mb-4">Bedankt!</h3>
-                 <p className="text-xl text-slate-600 mb-8">
+                 <p className="text-xl text-slate-600">
                     We hebben je aanvraag ontvangen en nemen snel contact op.
                  </p>
-                 <button
-                    onClick={resetForm}
-                    className="px-8 py-3 bg-slate-900 text-white font-bold rounded-full hover:bg-slate-800 transition-all inline-flex items-center gap-2"
-                 >
-                    Nog een aanvraag indienen <ArrowRight size={18} />
-                 </button>
               </div>
            ) : submitError ? (
               <div className="text-center py-12">
