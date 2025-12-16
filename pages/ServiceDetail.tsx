@@ -16,12 +16,12 @@ const ServiceDetail: React.FC = () => {
       process: [
         { title: 'Markt mapping', description: 'Wij analyseren jouw doelmarkt en identificeren de beste prospects.' },
         { title: 'Outbound campagnes', description: 'Gepersonaliseerde benadering via LinkedIn, email en telefoon.' },
-        { title: 'Afspraken planning', description: 'Wij zorgen dat de leads rechtstreeks in je agenda komen.' }
+        { title: 'Warme leads', description: 'Wij zorgen dat de leads rechtstreeks in je agenda komen.' }
       ],
       benefits: [
-        'Bespaar 10+ uren per week aan acquisitie',
-        'Warme leads met hogere conversion rate',
-        'Consistente pipeline van nieuwe opdrachtgevers',
+        '20-30 warme leads per maand',
+        'Leads met hoog conversion ratio',
+        'Consistent 4-6 nieuwe opdrachten per maand',
         'Focus op je core business'
       ],
       caseStudy: {

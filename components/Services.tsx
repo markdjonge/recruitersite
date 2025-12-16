@@ -12,7 +12,7 @@ const Services: React.FC = () => {
       icon: Target,
       iconBg: 'bg-brand-yellow',
       iconColor: 'text-slate-900',
-      features: ['Markt mapping', 'Outbound campagnes', 'Afspraken planning']
+      features: ['Markt mapping', 'Outbound campagnes', 'Warme leads']
     },
     {
       id: 2,

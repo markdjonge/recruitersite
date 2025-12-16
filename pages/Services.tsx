@@ -25,7 +25,7 @@ const Services: React.FC = () => {
             <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500 flex-1">
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Markt mapping</li>
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Outbound campagnes</li>
-              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Afspraken planning</li>
+              <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Warme leads</li>
             </ul>
             <Link to="/diensten/leadgeneratie" className="w-full bg-brand-yellow text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2">
               Lees meer
