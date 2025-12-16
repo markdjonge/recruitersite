@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +8,9 @@ const Contact: React.FC = () => {
     company: '',
     phone: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -15,9 +18,10 @@ const Contact: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitError(false);
 
     try {
-      // Replace with your webhook URL
       const webhookUrl = 'https://automation.linkedup.online/webhook/488010b6-178a-490a-9f1a-b218669cf39f';
 
       const response = await fetch(webhookUrl, {
@@ -33,15 +37,23 @@ const Contact: React.FC = () => {
       });
 
       if (response.ok) {
-        alert('Bedankt! We nemen contact op.');
+        setSubmitSuccess(true);
         setFormData({ name: '', email: '', company: '', phone: '' });
+        setTimeout(() => setSubmitSuccess(false), 5000);
       } else {
-        alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+        setSubmitError(true);
       }
     } catch (error) {
       console.error('Webhook error:', error);
-      alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+      setSubmitError(true);
+    } finally {
+      setIsSubmitting(false);
     }
+  };
+
+  const resetForm = () => {
+    setSubmitSuccess(false);
+    setFormData({ name: '', email: '', company: '', phone: '' });
   };
 
   return (
