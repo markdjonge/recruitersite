@@ -47,6 +47,26 @@ const Hero: React.FC = () => {
                </div>
             </div>
           </div>
+
+          <div className="relative">
+             <div className="aspect-square rounded-[3rem] overflow-hidden relative shadow-2xl border-4 border-white">
+                 <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Fff53698eb8ff4c169cfd3f54a564a66f?format=webp&width=800"
+                    alt="Team collaboration"
+                    className="object-cover w-full h-full"
+                 />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                 <div className="absolute bottom-10 left-10 text-white">
+                    <p className="text-brand-yellow font-bold uppercase tracking-wider mb-2">Full-Service Partner</p>
+                    <h3 className="text-3xl font-bold">Jouw externe sales- <br/>en sourcingsafdeling.</h3>
+                 </div>
+             </div>
+             {/* Floating Badge */}
+             <div className="absolute -bottom-10 -right-10 bg-white p-8 rounded-3xl shadow-xl border border-slate-100 max-w-xs hidden">
+                 <p className="text-5xl font-black text-slate-900 mb-2">2-zijdig</p>
+                 <p className="text-slate-600 font-medium">Groei in opdrachtgevers én kandidaten.</p>
+             </div>
+          </div>
         </div>
       </div>
     </section>
