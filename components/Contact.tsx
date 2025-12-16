@@ -70,8 +70,8 @@ const Contact: React.FC = () => {
            {submitSuccess ? (
               <div className="text-center py-12">
                  <div className="flex justify-center mb-6">
-                    <div className="bg-green-100 p-4 rounded-full">
-                       <Check size={48} className="text-green-600" />
+                    <div className="bg-brand-yellow p-4 rounded-full">
+                       <Check size={48} className="text-slate-900" strokeWidth={3} />
                     </div>
                  </div>
                  <h3 className="text-3xl font-black text-slate-900 mb-4">Bedankt!</h3>
