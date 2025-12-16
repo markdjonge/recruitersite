@@ -19,7 +19,7 @@ const ServiceDetail: React.FC = () => {
         { title: 'Warme leads', description: 'Wij zorgen dat de leads rechtstreeks in je agenda komen.' }
       ],
       benefits: [
-        '20-30 warmde leads per maand',
+        '20-30 warme leads per maand',
         'Warme leads met hoog conversion ratio',
         'Consistent 4-6 nieuwe opdrachten per maand',
         'Focus op je core business'
