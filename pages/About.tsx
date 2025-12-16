@@ -31,25 +31,16 @@ const About: React.FC = () => {
             <h2 className="text-4xl font-black mb-8 text-slate-900">Maak kennis met ons team.</h2>
             <div className="grid md:grid-cols-3 gap-8">
                 <div className="text-center">
-                    <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Fc3df6f80d4de4a20a1e84636b1f40be1?format=webp&width=800" alt="Mark de Jonge" className="w-full h-full object-cover" />
-                    </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Mark de Jonge</h3>
                     <p className="text-slate-600 mb-4">Founder</p>
                     <div className="w-12 h-1 bg-brand-yellow mx-auto"></div>
                 </div>
                 <div className="text-center">
-                    <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Ff92bf63d20424fc5bc1cf4efe757c810?format=webp&width=800" alt="Dennis van Wees" className="w-full h-full object-cover" />
-                    </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Dennis van Wees</h3>
                     <p className="text-slate-600 mb-4">Recruitment Manager</p>
                     <div className="w-12 h-1 bg-brand-yellow mx-auto"></div>
                 </div>
                 <div className="text-center">
-                    <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2Fc1e9ab3f935943d08766d8d186be23ac?format=webp&width=800" alt="Maarten de Lange" className="w-full h-full object-cover" />
-                    </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Maarten de Lange</h3>
                     <p className="text-slate-600 mb-4">Recruitment Manager</p>
                     <div className="w-12 h-1 bg-brand-yellow mx-auto"></div>
