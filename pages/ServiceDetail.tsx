@@ -16,7 +16,7 @@ const ServiceDetail: React.FC = () => {
       process: [
         { title: 'Markt mapping', description: 'Wij analyseren jouw doelmarkt en identificeren de beste prospects.' },
         { title: 'Outbound campagnes', description: 'Gepersonaliseerde benadering via LinkedIn, email en telefoon.' },
-        { title: 'Wamrme leads', description: 'Wij zorgen dat de leads rechtstreeks in je agenda komen.' }
+        { title: 'Warme leads', description: 'Wij zorgen dat de leads rechtstreeks in je agenda komen.' }
       ],
       benefits: [
         '20-30 warmde leads per maand',
