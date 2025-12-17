@@ -209,7 +209,7 @@ const StrategyGenerator: React.FC = () => {
                      "{result.opportunity}"
                    </p>
                    <div className="mt-6 pt-6 border-t border-slate-200 flex flex-col justify-between items-center gap-4">
-                      <a href="#contact" className="w-full text-center bg-slate-900 text-white px-6 py-4 rounded-xl font-bold text-sm hover:bg-slate-800 transition-colors shadow-lg flex items-center justify-center gap-2">
+                      <a href="#contact" onClick={() => trackEvent('market_scan_cta_click')} className="w-full text-center bg-slate-900 text-white px-6 py-4 rounded-xl font-bold text-sm hover:bg-slate-800 transition-colors shadow-lg flex items-center justify-center gap-2">
                         Help mij deze business binnenhalen <ExternalLink size={16} />
                       </a>
                       <p className="text-xs text-slate-400 text-center">
