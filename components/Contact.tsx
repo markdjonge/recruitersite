@@ -38,6 +38,7 @@ const Contact: React.FC = () => {
       });
 
       if (response.ok) {
+        trackConversion('contact_form_submission');
         setSubmitSuccess(true);
         setFormData({ name: '', email: '', company: '', phone: '' });
         setTimeout(() => setSubmitSuccess(false), 5000);
