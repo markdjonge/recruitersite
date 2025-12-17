@@ -143,7 +143,7 @@ const Contact: React.FC = () => {
                          name="phone"
                          value={formData.phone}
                          onChange={handleChange}
-                         placeholder="06 12345678"
+                         placeholder="06-44858302"
                          className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
                        />
                     </div>
