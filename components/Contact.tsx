@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Check } from 'lucide-react';
+import { trackConversion } from '../services/ga4Service';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
