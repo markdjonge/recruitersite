@@ -20,6 +20,7 @@ const StrategyGenerator: React.FC = () => {
     try {
       const data = await generateLeadStrategy(niche);
       setResult(data);
+      trackConversion('market_scan_generated', 1);
 
       // Send to webhook (optional)
       const webhookUrl = 'https://automation.linkedup.online/webhook/488010b6-178a-490a-9f1a-b218669cf39f';
