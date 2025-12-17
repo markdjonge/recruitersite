@@ -28,10 +28,10 @@ const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a href="#contact" className="px-10 py-5 bg-brand-yellow text-slate-900 font-bold text-lg rounded-full hover:bg-yellow-400 transition-transform hover:-translate-y-1 shadow-xl shadow-yellow-400/20 inline-flex items-center gap-2">
+              <a href="#contact" onClick={() => trackEvent('cta_start_growing')} className="px-10 py-5 bg-brand-yellow text-slate-900 font-bold text-lg rounded-full hover:bg-yellow-400 transition-transform hover:-translate-y-1 shadow-xl shadow-yellow-400/20 inline-flex items-center gap-2">
                 Start met groeien
               </a>
-              <a href="#market-scan" className="px-10 py-5 bg-white text-slate-900 font-bold text-lg rounded-full border-2 border-slate-200 hover:border-slate-900 transition-colors inline-flex items-center gap-2">
+              <a href="#market-scan" onClick={() => trackEvent('cta_market_scan')} className="px-10 py-5 bg-white text-slate-900 font-bold text-lg rounded-full border-2 border-slate-200 hover:border-slate-900 transition-colors inline-flex items-center gap-2">
                 Doe de marktscan
                 <ChevronRight size={20} />
               </a>
