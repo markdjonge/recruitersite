@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { generateLeadStrategy, StrategyResult } from '../services/geminiService';
 import { Loader2, Search, Briefcase, Users, CheckCircle2, BarChart3, ExternalLink } from 'lucide-react';
+import { trackEvent, trackConversion } from '../services/ga4Service';
 
 const StrategyGenerator: React.FC = () => {
   const [niche, setNiche] = useState('');
