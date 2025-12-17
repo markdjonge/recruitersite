@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronRight, Users, Briefcase } from 'lucide-react';
+import { trackEvent } from '../services/ga4Service';
 
 const Hero: React.FC = () => {
   return (
