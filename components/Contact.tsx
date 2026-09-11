@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { ArrowRight, Check } from 'lucide-react';
+import { ArrowRight, Check, Phone, Mail } from 'lucide-react';
 import { trackConversion } from '../services/ga4Service';
+import { contactInfo } from '../data/contact';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,10 @@ const Contact: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState(false);
+  // Bot-bescherming: honeypot-veld (onzichtbaar voor mensen)
+  const [honeypot, setHoneypot] = useState('');
+  // Bot-bescherming: tijdstip waarop het formulier geladen is
+  const formLoadedAt = React.useRef<number>(Date.now());
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,11 +24,34 @@ const Contact: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Bot-check 1: honeypot ingevuld? Dan is het een bot.
+    // Bot-check 2: binnen 3 seconden verzonden? Dan is het vrijwel zeker een bot.
+    const elapsedMs = Date.now() - formLoadedAt.current;
+    if (honeypot !== '' || elapsedMs < 3000) {
+      // Stilletjes afwijzen: toon wél een succesmelding zodat bots niet merken dat ze geblokkeerd zijn.
+      console.warn('Inzending geblokkeerd (spam-bescherming).');
+      setSubmitSuccess(true);
+      setTimeout(() => setSubmitSuccess(false), 5000);
+      return;
+    }
+
     setIsSubmitting(true);
     setSubmitError(false);
 
     try {
       const webhookUrl = 'https://automation.linkedup.online/webhook/488010b6-178a-490a-9f1a-b218669cf39f';
+
+      // Haal een eventueel eerder gemaakte marktscan op zodat we die kunnen meesturen
+      let marketScan = null;
+      try {
+        const stored = localStorage.getItem('linkedup_market_scan');
+        if (stored) {
+          marketScan = JSON.parse(stored);
+        }
+      } catch (storageErr) {
+        console.error('Kon opgeslagen scan niet lezen:', storageErr);
+      }
 
       const response = await fetch(webhookUrl, {
         method: 'POST',
@@ -33,7 +61,8 @@ const Contact: React.FC = () => {
         body: JSON.stringify({
           type: 'contact_form',
           timestamp: new Date().toISOString(),
-          ...formData
+          ...formData,
+          marketScan
         })
       });
 
@@ -41,6 +70,8 @@ const Contact: React.FC = () => {
         trackConversion('contact_form_submission');
         setSubmitSuccess(true);
         setFormData({ name: '', email: '', company: '', phone: '' });
+        // Scan is nu meegestuurd, dus we kunnen hem uit de browser verwijderen
+        localStorage.removeItem('linkedup_market_scan');
         setTimeout(() => setSubmitSuccess(false), 5000);
       } else {
         setSubmitError(true);
@@ -66,6 +97,41 @@ const Contact: React.FC = () => {
            <p className="text-xl text-slate-600">
              Klaar om de volgende stap te zetten? Laat je gegevens achter voor een vrijblijvende strategiesessie.
            </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+           <a
+             href={`tel:${contactInfo.phoneHref}`}
+             className="group bg-brand-gray p-8 rounded-2xl flex items-center gap-6 hover:bg-brand-yellow transition-colors"
+           >
+             <div className="bg-brand-yellow group-hover:bg-slate-900 p-4 rounded-full transition-colors">
+               <Phone size={28} className="text-slate-900 group-hover:text-brand-yellow transition-colors" />
+             </div>
+             <div>
+               <p className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-1">Bel ons</p>
+               <p className="text-xl font-black text-slate-900">{contactInfo.phone}</p>
+             </div>
+           </a>
+           <a
+             href={`mailto:${contactInfo.email}`}
+             className="group bg-brand-gray p-8 rounded-2xl flex items-center gap-6 hover:bg-brand-yellow transition-colors"
+           >
+             <div className="bg-brand-yellow group-hover:bg-slate-900 p-4 rounded-full transition-colors">
+               <Mail size={28} className="text-slate-900 group-hover:text-brand-yellow transition-colors" />
+             </div>
+             <div>
+               <p className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-1">Mail ons</p>
+               <p className="text-xl font-black text-slate-900 break-all">{contactInfo.email}</p>
+             </div>
+           </a>
+        </div>
+
+        <div className="flex items-center gap-6 mb-12">
+           <div className="flex-grow h-px bg-slate-200"></div>
+           <p className="text-slate-500 font-bold uppercase text-sm tracking-wider whitespace-nowrap">
+             Of vul het formulier hieronder in
+           </p>
+           <div className="flex-grow h-px bg-slate-200"></div>
         </div>
 
         <div className="bg-brand-gray p-8 md:p-12 rounded-[3rem] shadow-sm">
@@ -143,10 +209,28 @@ const Contact: React.FC = () => {
                          name="phone"
                          value={formData.phone}
                          onChange={handleChange}
-                         placeholder="06-44858302"
+                         placeholder="085-0045749"
                          className="w-full bg-white border-2 border-slate-200 p-4 rounded-xl font-medium focus:outline-none focus:border-brand-yellow focus:ring-0 transition-colors"
                        />
                     </div>
+                 </div>
+
+                 {/* Honeypot-veld: onzichtbaar voor mensen, bots vullen dit vaak wel in */}
+                 <div
+                   aria-hidden="true"
+                   style={{ position: 'absolute', left: '-9999px', top: '-9999px', height: 0, overflow: 'hidden' }}
+                 >
+                    <label>
+                       Website
+                       <input
+                         type="text"
+                         name="website"
+                         value={honeypot}
+                         onChange={(e) => setHoneypot(e.target.value)}
+                         tabIndex={-1}
+                         autoComplete="off"
+                       />
+                    </label>
                  </div>
 
                  <div className="md:col-span-2 pt-4">

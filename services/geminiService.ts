@@ -1,6 +1,17 @@
 import { GoogleGenAI, Type } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+let ai: GoogleGenAI | null = null;
+
+const getAI = (): GoogleGenAI => {
+  if (!ai) {
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+    if (!apiKey) {
+      throw new Error("Geen Gemini API-key gevonden. Zet VITE_GEMINI_API_KEY in een .env.local bestand.");
+    }
+    ai = new GoogleGenAI({ apiKey });
+  }
+  return ai;
+};
 
 export interface StrategyResult {
   headline: string;
@@ -16,7 +27,7 @@ export interface StrategyResult {
 
 export const generateLeadStrategy = async (niche: string): Promise<StrategyResult> => {
   try {
-    const response = await ai.models.generateContent({
+    const response = await getAI().models.generateContent({
       model: "gemini-2.5-flash",
       contents: `Fungeer als een senior recruitment partner bij LinkedUp.
       Jouw klant is een recruitment agency in Nederland gespecialiseerd in: "${niche}".

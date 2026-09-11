@@ -22,6 +22,17 @@ const StrategyGenerator: React.FC = () => {
       setResult(data);
       trackConversion('market_scan_generated', 1);
 
+      // Sla de scan op in de browser zodat het contactformulier hem kan meesturen
+      try {
+        localStorage.setItem('linkedup_market_scan', JSON.stringify({
+          niche,
+          result: data,
+          scannedAt: new Date().toISOString()
+        }));
+      } catch (storageErr) {
+        console.error('Kon scan niet lokaal opslaan:', storageErr);
+      }
+
       // Send to webhook (optional)
       const webhookUrl = 'https://automation.linkedup.online/webhook/488010b6-178a-490a-9f1a-b218669cf39f';
       if (webhookUrl) {

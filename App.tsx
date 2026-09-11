@@ -9,6 +9,7 @@ import Cases from './pages/Cases';
 import CaseDetail from './pages/CaseDetail';
 import About from './pages/About';
 import ContactPage from './pages/ContactPage';
+import Landing from './pages/Landing';
 import ScrollToTop from './components/ScrollToTop';
 import { initGA4, trackPageView } from './services/ga4Service';
 
@@ -25,6 +26,17 @@ const App: React.FC = () => {
   useEffect(() => {
     trackPageView(location.pathname);
   }, [location.pathname]);
+
+  // Landingspagina's voor campagnes tonen we zonder header/footer (minder afleiding = meer conversie)
+  const isLandingPage = location.pathname === '/start';
+
+  if (isLandingPage) {
+    return (
+      <Routes>
+        <Route path="/start" element={<Landing />} />
+      </Routes>
+    );
+  }
 
   return (
     <div className="bg-slate-50 min-h-screen text-slate-900 selection:bg-brand-200 selection:text-brand-900 font-sans flex flex-col">
