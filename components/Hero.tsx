@@ -14,6 +14,9 @@ const Hero: React.FC = () => {
 
           <div className="max-w-3xl">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-slate-900 mb-8 leading-[1]">
+              <span className="block text-base md:text-lg font-bold tracking-widest uppercase text-slate-500 mb-6 leading-normal">
+                Leadgeneratie voor recruitment agencies
+              </span>
               Wij de match,<br />
               <span className="relative inline-block">
                 jij de business.

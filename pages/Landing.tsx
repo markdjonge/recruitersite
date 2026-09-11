@@ -16,6 +16,7 @@ import {
 import { contactInfo } from '../data/contact';
 import { trackConversion } from '../services/ga4Service';
 import { initMetaPixel, trackMetaLead, trackMetaSchedule } from '../services/metaPixelService';
+import SEO from '../components/SEO';
 
 // ============================================
 // TESTVERSIE LANDINGSPAGINA (Meta Ads)
@@ -131,6 +132,10 @@ const Landing: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
+      <SEO
+        title="Gratis Strategiesessie - Meer opdrachtgevers voor jouw agency | LinkedUp"
+        description="Vraag een gratis strategiesessie aan en ontdek hoe LinkedUp jouw recruitment agency helpt met leadgeneratie: meer opdrachtgevers en betere kandidaten."
+      />
 
       {/* ===== Minimale header (geen menu = geen afleiding) ===== */}
       <header className="bg-white py-5 border-b border-slate-100">

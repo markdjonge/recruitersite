@@ -1,10 +1,16 @@
 import React from 'react';
 import { Target, Users, Bot, Briefcase, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const Services: React.FC = () => {
   return (
     <div className="pt-32 pb-20">
+      <SEO
+        title="Diensten - Leadgeneratie, Sourcing & Automation | LinkedUp"
+        description="Ontdek de diensten van LinkedUp: leadgeneratie (nieuwe opdrachtgevers), candidate sourcing en recruitment automation voor recruitment agencies in Nederland."
+        path="/diensten"
+      />
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-black text-slate-900 mb-6">Onze Diensten.</h1>

@@ -1,10 +1,16 @@
 import React from 'react';
 import { ArrowRight, Trophy, Heart, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const About: React.FC = () => {
   return (
     <div className="pt-32 pb-20">
+      <SEO
+        title="Over ons - Het team achter LinkedUp | Leadgeneratie voor Recruitment"
+        description="Maak kennis met het team van LinkedUp uit Groningen: specialisten in leadgeneratie en sourcing voor recruitment agencies."
+        path="/over-ons"
+      />
       <div className="container mx-auto px-6">
         
         {/* Intro */}

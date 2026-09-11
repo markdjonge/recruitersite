@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { cases } from '../data/cases';
 import { ArrowLeft, ArrowRight, CheckCircle2 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const CaseDetail: React.FC = () => {
   const { id } = useParams();
@@ -18,6 +19,11 @@ const CaseDetail: React.FC = () => {
 
   return (
     <div className="pt-32 pb-20">
+      <SEO
+        title={`${caseItem.title} | Case LinkedUp`}
+        description={`${caseItem.category}: ${caseItem.desc}`}
+        path={`/cases/${caseItem.id}`}
+      />
       <div className="container mx-auto px-6">
         <Link to="/cases" className="inline-flex items-center gap-2 text-slate-500 font-bold mb-8 hover:text-brand-yellow transition-colors">
             <ArrowLeft size={20} /> Alle cases

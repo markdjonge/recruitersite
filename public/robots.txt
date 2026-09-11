@@ -1,0 +1,33 @@
+# LinkedUp - robots.txt
+# Iedereen welkom, inclusief AI-crawlers (GEO)
+
+User-agent: *
+Allow: /
+Disallow: /start
+
+# AI-crawlers expliciet toestaan (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://linkedup.online/sitemap.xml

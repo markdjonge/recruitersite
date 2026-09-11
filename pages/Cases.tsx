@@ -1,9 +1,15 @@
 import React from 'react';
 import Features from '../components/Features';
+import SEO from '../components/SEO';
 
 const Cases: React.FC = () => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Cases & Resultaten - Leadgeneratie voor Recruitment | LinkedUp"
+        description="Bekijk hoe LinkedUp recruitment agencies helpt groeien met leadgeneratie en sourcing: echte cases, echte resultaten in techniek, finance en meer."
+        path="/cases"
+      />
       <div className="bg-slate-900 text-white py-12 md:py-20">
          <div className="container mx-auto px-6 text-center">
              <h1 className="text-4xl md:text-7xl font-black mb-4 md:mb-6 break-words">Succesverhalen.</h1>

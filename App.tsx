@@ -1,18 +1,14 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import ServiceDetail from './pages/ServiceDetail';
-import Cases from './pages/Cases';
-import CaseDetail from './pages/CaseDetail';
-import About from './pages/About';
-import ContactPage from './pages/ContactPage';
-import Landing from './pages/Landing';
 import ScrollToTop from './components/ScrollToTop';
 import { initGA4, trackPageView } from './services/ga4Service';
 
+/**
+ * Layout voor alle "normale" pagina's (met header en footer).
+ * De landingspagina /start gebruikt deze layout bewust niet.
+ */
 const App: React.FC = () => {
   const location = useLocation();
 
@@ -27,32 +23,12 @@ const App: React.FC = () => {
     trackPageView(location.pathname);
   }, [location.pathname]);
 
-  // Landingspagina's voor campagnes tonen we zonder header/footer (minder afleiding = meer conversie)
-  const isLandingPage = location.pathname === '/start';
-
-  if (isLandingPage) {
-    return (
-      <Routes>
-        <Route path="/start" element={<Landing />} />
-      </Routes>
-    );
-  }
-
   return (
     <div className="bg-slate-50 min-h-screen text-slate-900 selection:bg-brand-200 selection:text-brand-900 font-sans flex flex-col">
       <ScrollToTop />
       <Header />
       <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/diensten" element={<Services />} />
-          <Route path="/diensten/:service" element={<ServiceDetail />} />
-          <Route path="/cases" element={<Cases />} />
-          <Route path="/cases/:id" element={<CaseDetail />} />
-          <Route path="/over-ons" element={<About />} />
-          <Route path="/werken-bij" element={<About />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
+        <Outlet />
       </main>
       <Footer />
     </div>

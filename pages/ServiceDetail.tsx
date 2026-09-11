@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Target, Users, Bot, ArrowRight, Check } from 'lucide-react';
 import { cases } from '../data/cases';
+import SEO from '../components/SEO';
 
 const ServiceDetail: React.FC = () => {
   const { service } = useParams<{ service: string }>();
@@ -124,6 +125,11 @@ const ServiceDetail: React.FC = () => {
 
   return (
     <div className="pt-32 pb-20">
+      <SEO
+        title={`${currentService.title} voor Recruitment Agencies | LinkedUp`}
+        description={`${currentService.subtitle}. ${currentService.description}`}
+        path={`/diensten/${service}`}
+      />
       {/* Hero Section */}
       <section className="mb-20">
         <div className="container mx-auto px-6">
