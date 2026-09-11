@@ -15,15 +15,15 @@ export const faqItems = [
   },
   {
     question: 'Wat kost leadgeneratie voor een recruitmentbureau?',
-    answer: 'De kosten hangen af van jouw niche, doelmarkt en gewenste volume. LinkedUp werkt met vaste maandafspraken zonder lange contracten. In een gratis strategiesessie van 30 minuten analyseren wij jouw markt en maken we een concreet voorstel op maat, inclusief verwacht aantal leads per maand.'
+    answer: 'Voor leadgeneratie werkt LinkedUp op basis van no cure no pay: je betaalt alleen per positieve reactie van een hiring manager. Er zijn geen opstartkosten. Wij benaderen hiring managers onder onze eigen naam, dus jouw bureau loopt geen enkel risico. In een gratis strategiesessie maken we een concreet voorstel op maat voor jouw niche.'
   },
   {
     question: 'Voor welke recruitment niches werkt LinkedUp?',
-    answer: 'LinkedUp werkt voor recruitment agencies in vrijwel elke niche, waaronder techniek, zorg, finance, legal, IT en logistiek. Met onze gratis AI-marktscan zie je direct hoeveel openstaande vacatures er op dit moment in jouw niche in Nederland zijn.'
+    answer: 'LinkedUp werkt voor recruitment agencies in vrijwel elke niche, waaronder techniek, zorg, finance, legal, IT, logistiek, marketing, sales en development. Met onze gratis AI-marktscan zie je direct hoeveel openstaande vacatures er op dit moment in jouw niche in Nederland zijn.'
   },
   {
     question: 'Hoe snel levert leadgeneratie resultaat op voor mijn agency?',
-    answer: 'De meeste klanten van LinkedUp zien binnen twee tot vier weken de eerste gesprekken met opdrachtgevers ontstaan. Omdat wij zowel de sales (opdrachtgevers) als de sourcing (kandidaten) overnemen, kan jouw team direct aan de slag met warme leads in plaats van koude acquisitie.'
+    answer: 'Zodra de leadgeneratie start, heb je binnen 2 dagen de eerste leads. LinkedUp benadert hiring managers met openstaande vacatures onder onze eigen naam en stuurt positieve reacties direct naar jou door. Jouw team kan daardoor direct aan de slag met warme leads in plaats van koude acquisitie.'
   }
 ];
 

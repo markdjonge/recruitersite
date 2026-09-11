@@ -12,18 +12,18 @@ const ServiceDetail: React.FC = () => {
       title: 'Leadgeneratie',
       subtitle: 'Warme leads van potentiële opdrachtgevers in jouw niche',
       icon: Target,
-      description: 'Wij benaderen proactief potentiële opdrachtgevers in jouw niche. Geen koude acquisitie meer voor jou, maar warme leads en afspraken in je agenda.',
+      description: 'Wij benaderen proactief hiring managers met openstaande vacatures in jouw niche – onder onze eigen naam, LinkedUp. Geen koude acquisitie meer voor jou: je betaalt alleen per positieve reactie (no cure no pay) en hebt binnen 2 dagen je eerste leads.',
       hero_image: 'https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F674d3a30bcb4424dbc5b5bf5fea291f2?format=webp&width=800',
       process: [
-        { title: 'Markt mapping', description: 'Wij analyseren jouw doelmarkt en identificeren de beste prospects.' },
-        { title: 'Outbound campagnes', description: 'Gepersonaliseerde benadering via LinkedIn, email en telefoon.' },
-        { title: 'Warme leads', description: 'Wij zorgen dat de leads rechtstreeks in je agenda komen.' }
+        { title: 'Markt mapping', description: 'Wij analyseren jouw doelmarkt en identificeren hiring managers met openstaande vacatures.' },
+        { title: 'Outbound onder onze naam', description: 'Wij benaderen hiring managers namens LinkedUp via LinkedIn, e-mail en telefoon.' },
+        { title: 'Warme leads binnen 2 dagen', description: 'Positieve reacties sturen wij direct door aan jou. De eerste leads heb je binnen 2 dagen.' }
       ],
       benefits: [
-        '20-30 warme leads per maand',
-        'Leads met hoog conversion ratio',
-        'Consistent 4-6 nieuwe opdrachten per maand',
-        'Focus op je core business'
+        'No cure no pay: betaal alleen per positieve reactie',
+        'Geen opstartkosten',
+        'Eerste leads binnen 2 dagen na start',
+        'Wij benaderen hiring managers onder onze eigen naam'
       ],
       caseStudy: {
         id: 'leadgeneratie-techniek',

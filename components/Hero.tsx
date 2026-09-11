@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, Users, Briefcase } from 'lucide-react';
+import { ChevronRight, Users, Briefcase, Zap } from 'lucide-react';
 import { trackEvent } from '../services/ga4Service';
 
 const Hero: React.FC = () => {
@@ -48,6 +48,10 @@ const Hero: React.FC = () => {
                <div className="flex items-center gap-2">
                  <Users size={18} className="text-brand-yellow" />
                  Betere kandidaten
+               </div>
+               <div className="flex items-center gap-2">
+                 <Zap size={18} className="text-brand-yellow" />
+                 No cure no pay
                </div>
             </div>
           </div>

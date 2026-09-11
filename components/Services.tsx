@@ -8,11 +8,11 @@ const Services: React.FC = () => {
       id: 1,
       title: 'Leadgeneratie',
       slug: 'leadgeneratie',
-      description: 'Wij benaderen proactief potentiële opdrachtgevers in jouw niche. Geen koude acquisitie meer voor jou, maar warme leads en afspraken in je agenda.',
+      description: 'Wij benaderen proactief hiring managers met vacatures in jouw niche, onder onze eigen naam. Je betaalt alleen per positieve reactie: no cure, no pay.',
       icon: Target,
       iconBg: 'bg-brand-yellow',
       iconColor: 'text-slate-900',
-      features: ['Markt mapping', 'Outbound campagnes', 'Warme leads']
+      features: ['No cure no pay', 'Geen opstartkosten', 'Eerste leads binnen 2 dagen']
     },
     {
       id: 2,

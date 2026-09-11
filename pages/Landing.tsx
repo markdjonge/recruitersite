@@ -114,19 +114,19 @@ const Landing: React.FC = () => {
   const faqs = [
     {
       q: 'Wat kost jullie dienst?',
-      a: 'Dit is een testantwoord. Beschrijf hier kort je prijsmodel, bijvoorbeeld een vast bedrag per maand of no-cure-no-pay per geplaatste kandidaat.'
+      a: 'Wij werken op basis van no cure no pay: je betaalt alleen per positieve reactie van een hiring manager. Er zijn geen opstartkosten en geen vaste maandlasten. Geen resultaat = geen kosten.'
     },
     {
       q: 'Hoe snel zie ik resultaat?',
-      a: 'Testantwoord: de meeste klanten zien binnen 2 tot 4 weken de eerste gesprekken met opdrachtgevers ontstaan.'
+      a: 'Binnen 2 dagen na de start heb je de eerste leads. Wij benaderen hiring managers met openstaande vacatures onder onze eigen naam (LinkedUp) en sturen positieve reacties direct naar je door.'
     },
     {
       q: 'Zit ik ergens aan vast?',
-      a: 'Testantwoord: nee, onze samenwerking is maandelijks opzegbaar. Wij geloven in resultaat, niet in contracten.'
+      a: 'Nee. Door het no cure no pay-model zit je nergens aan vast: je betaalt uitsluitend voor daadwerkelijke resultaten. Stoppen kan op elk moment.'
     },
     {
       q: 'Voor welke recruitment niches werken jullie?',
-      a: 'Testantwoord: van techniek en zorg tot legal en finance. In de strategiesessie kijken we of jouw niche aansluit bij onze aanpak.'
+      a: 'Vrijwel elke niche: van techniek en zorg tot marketing, sales en developers. In de gratis strategiesessie kijken we samen naar het marktpotentieel in jouw niche.'
     }
   ];
 
@@ -175,9 +175,10 @@ const Landing: React.FC = () => {
               </p>
               <ul className="space-y-3 mb-8">
                 {[
-                  'Actieve benadering van hiring managers in jouw niche',
-                  'Sourcing van kandidaten via LinkedIn, Meta en Google',
-                  'Vrijblijvende strategiesessie van 30 minuten'
+                  'No cure no pay: betaal alleen per positieve reactie',
+                  'Eerste leads binnen 2 dagen na start',
+                  'Geen opstartkosten, geen risico',
+                  'Wij benaderen hiring managers onder onze eigen naam'
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-slate-200">
                     <Check size={20} className="text-brand-yellow flex-shrink-0 mt-0.5" strokeWidth={3} />
