@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowRight, Check, Phone, Mail } from 'lucide-react';
 import { trackConversion } from '../services/ga4Service';
+import { trackEvent } from '../services/ga4Service';
 import { contactInfo } from '../data/contact';
+import CalendlyEmbed from './CalendlyEmbed';
+import { initCalendlyTracking, CALENDLY_URL_GENERAL } from '../services/calendlyService';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -17,6 +20,10 @@ const Contact: React.FC = () => {
   const [honeypot, setHoneypot] = useState('');
   // Bot-bescherming: tijdstip waarop het formulier geladen is
   const formLoadedAt = React.useRef<number>(Date.now());
+
+  useEffect(() => {
+    initCalendlyTracking();
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -93,9 +100,9 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-24 bg-white relative">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-16">
-           <h2 className="text-5xl font-black text-slate-900 mb-6">Start met groeien.</h2>
+           <h2 className="text-5xl font-black text-slate-900 mb-6">Plan je gratis strategiesessie.</h2>
            <p className="text-xl text-slate-600">
-             Klaar om de volgende stap te zetten? Laat je gegevens achter voor een vrijblijvende strategiesessie.
+             Kies direct een moment in de agenda, of neem contact op via telefoon, mail of het formulier.
            </p>
         </div>
 
@@ -126,10 +133,19 @@ const Contact: React.FC = () => {
            </a>
         </div>
 
+        {/* Calendly agenda als hoofdactie */}
+        <div className="mb-12">
+           <div className="text-center mb-6">
+              <h3 className="text-2xl font-black text-slate-900 mb-2">Plan direct een gesprek</h3>
+              <p className="text-slate-600">Kies hieronder een moment dat jou uitkomt. Eén klik, direct geregeld.</p>
+           </div>
+           <CalendlyEmbed url={CALENDLY_URL_GENERAL} />
+        </div>
+
         <div className="flex items-center gap-6 mb-12">
            <div className="flex-grow h-px bg-slate-200"></div>
            <p className="text-slate-500 font-bold uppercase text-sm tracking-wider whitespace-nowrap">
-             Of vul het formulier hieronder in
+             Of stuur een bericht via het formulier
            </p>
            <div className="flex-grow h-px bg-slate-200"></div>
         </div>

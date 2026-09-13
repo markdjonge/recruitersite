@@ -46,6 +46,31 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://linkedup.online/no-cure-no-pay-leadgeneratie</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linkedup.online/kennisbank</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linkedup.online/kennisbank/meer-opdrachtgevers-als-recruitment-agency</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linkedup.online/kennisbank/wat-kost-leadgeneratie-recruitmentbureau</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linkedup.online/kennisbank/koude-acquisitie-recruiters-werkt-steeds-minder</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://linkedup.online/over-ons</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

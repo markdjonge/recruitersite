@@ -24,7 +24,9 @@ import SEO from '../components/SEO';
 // ============================================
 
 // TODO: vervang door je echte Calendly/Cal.com link
-const MEETING_URL = 'https://cal.com/jouw-linkedin-link/kennismaking';
+import { CALENDLY_URL } from '../services/calendlyService';
+
+const MEETING_URL = CALENDLY_URL;
 
 const Landing: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', company: '', phone: '' });
@@ -171,7 +173,7 @@ const Landing: React.FC = () => {
                 Wij vinden opdrachtgevers. <span className="text-brand-yellow">Jij plaatst kandidaten.</span>
               </h1>
               <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-                LinkedUp helpt recruitment agencies aan een voorspelbare stroom van nieuwe opdrachten en gekwalificeerde kandidaten. Geen koude acquisitie meer – wij doen het voorwerk.
+                LinkedUp helpt recruitment agencies aan een voorspelbare stroom van nieuwe opdrachten en gekwalificeerde kandidaten. Geen koude acquisitie meer, wij doen het voorwerk.
               </p>
               <ul className="space-y-3 mb-8">
                 {[

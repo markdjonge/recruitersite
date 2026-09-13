@@ -8,6 +8,9 @@ import Cases from './pages/Cases';
 import CaseDetail from './pages/CaseDetail';
 import About from './pages/About';
 import ContactPage from './pages/ContactPage';
+import NoCureNoPay from './pages/NoCureNoPay';
+import Kennisbank from './pages/Kennisbank';
+import BlogPost from './pages/BlogPost';
 import Landing from './pages/Landing';
 
 export const routes: RouteRecord[] = [
@@ -42,6 +45,13 @@ export const routes: RouteRecord[] = [
           'cases/sourcing-finance',
           'cases/full-service-sales',
         ],
+      },
+      { path: 'no-cure-no-pay-leadgeneratie', Component: NoCureNoPay },
+      { path: 'kennisbank', Component: Kennisbank },
+      {
+        path: 'kennisbank/:slug',
+        Component: BlogPost,
+        getStaticPaths: () => ['kennisbank/meer-opdrachtgevers-als-recruitment-agency', 'kennisbank/wat-kost-leadgeneratie-recruitmentbureau', 'kennisbank/koude-acquisitie-recruiters-werkt-steeds-minder'],
       },
       { path: 'over-ons', Component: About },
       { path: 'werken-bij', Component: About },

@@ -12,7 +12,7 @@ const ServiceDetail: React.FC = () => {
       title: 'Leadgeneratie',
       subtitle: 'Warme leads van potentiële opdrachtgevers in jouw niche',
       icon: Target,
-      description: 'Wij benaderen proactief hiring managers met openstaande vacatures in jouw niche – onder onze eigen naam, LinkedUp. Geen koude acquisitie meer voor jou: je betaalt alleen per positieve reactie (no cure no pay) en hebt binnen 2 dagen je eerste leads.',
+      description: 'Wij benaderen proactief hiring managers met openstaande vacatures in jouw niche, en wel onder onze eigen naam: LinkedUp. Geen koude acquisitie meer voor jou: je betaalt alleen per positieve reactie (no cure no pay) en hebt binnen 2 dagen je eerste leads.',
       hero_image: 'https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F674d3a30bcb4424dbc5b5bf5fea291f2?format=webp&width=800',
       process: [
         { title: 'Markt mapping', description: 'Wij analyseren jouw doelmarkt en identificeren hiring managers met openstaande vacatures.' },
@@ -24,6 +24,37 @@ const ServiceDetail: React.FC = () => {
         'Geen opstartkosten',
         'Eerste leads binnen 2 dagen na start',
         'Wij benaderen hiring managers onder onze eigen naam'
+      ],
+      pillar: [
+        {
+          title: 'Wat is leadgeneratie voor recruitment agencies?',
+          paragraphs: [
+            'Leadgeneratie voor recruitment agencies is het systematisch vinden en benaderen van organisaties met openstaande vacatures: jouw potentiële opdrachtgevers. Waar recruitment marketing zich richt op het aantrekken van kandidaten, draait leadgeneratie om de commerciële kant van jouw bureau: nieuwe opdrachten binnenhalen.',
+            'De meeste recruitment agencies groeien via hun eigen netwerk en mond-tot-mondreclame. Dat werkt, tot het stopt. Wie structureel wil groeien, heeft een voorspelbare stroom van gesprekken met hiring managers nodig. Precies dat leveren wij: wij mappen jouw markt, identificeren bedrijven met actieve vacatures en benaderen de juiste hiring managers onder onze eigen naam. Positieve reacties sturen wij direct naar je door.'
+          ]
+        },
+        {
+          title: 'Waarom koude acquisitie voor recruiters steeds minder werkt',
+          paragraphs: [
+            'Hiring managers worden dagelijks bestookt met generieke salesberichten. Het resultaat: responspercentages dalen en acquisitie kost steeds meer tijd. Tijd die jij liever besteedt aan gesprekken met kandidaten en klanten.',
+            'Effectieve leadgeneratie voor recruiters draait om timing en relevantie: de juiste organisatie benaderen op het moment dat er een vacature openstaat, met een bericht dat aansluit bij hun situatie. Dat is precies waar onze aanpak op is gebouwd: datagedreven, persoonlijk en onder onze naam, zodat jouw merk nooit beschadigt.'
+          ]
+        },
+        {
+          title: 'No cure no pay: leadgeneratie zonder risico',
+          paragraphs: [
+            'Wij werken op basis van no cure no pay. Dat betekent: je betaalt alleen voor daadwerkelijke resultaten: een positieve reactie van een hiring manager. Geen opstartkosten, geen vaste maandlasten, geen risico.',
+            'Na de start heb je binnen 2 dagen je eerste leads. Zo simpel is het. Lees meer over hoe dit precies werkt op onze pagina over no cure no pay leadgeneratie.'
+          ],
+          link: { to: '/no-cure-no-pay-leadgeneratie', label: 'Alles over no cure no pay' }
+        },
+        {
+          title: 'Voor welke recruitment agencies werkt dit?',
+          paragraphs: [
+            'Onze aanpak werkt voor agencies in vrijwel elke niche: van techniek, zorg en finance tot legal, IT, logistiek, marketing, sales en development. Of je nu een jong bureau bent dat zijn eerste opdrachtgevers zoekt, of een gevestigde speler die wil opschalen: een voorspelbare instroom van gesprekken met hiring managers is de basis van groei.',
+            'Benieuwd naar het potentieel in jouw niche? Doe de gratis marktscan op onze homepage en krijg direct een indicatieve inschatting van het aantal openstaande vacatures in jouw markt.'
+          ]
+        }
       ],
       caseStudy: {
         id: 'leadgeneratie-techniek',
@@ -68,7 +99,7 @@ const ServiceDetail: React.FC = () => {
         { title: 'AI Kandidaat Matching', description: 'Intelligente matching op basis van skills en ervaring.' }
       ],
       benefits: [
-        'Bespaar tot 15+ uren per week aan handmatige work',
+        'Bespaar tot 15+ uren per week aan handmatig werk',
         'Realtime data synchronisatie',
         'Nauwkeurigere candidate matching',
         'Schaal je operaties zonder extra kosten'
@@ -84,7 +115,7 @@ const ServiceDetail: React.FC = () => {
       title: 'Full Service',
       subtitle: 'Volledige funnel: van lead tot match',
       icon: Target,
-      description: 'Wij pakken de volledige funnel op: van lead tot match. Laat ons zowel opdrachtgevers als kandidaten sourced, zodat jij je volledig op matchen kunt focussen.',
+      description: 'Wij pakken de volledige funnel op: van lead tot match. Wij sourcen zowel opdrachtgevers als kandidaten, zodat jij je volledig op matchen kunt focussen.',
       hero_image: 'https://cdn.builder.io/api/v1/image/assets%2F5eb3e8a359f44db3a3a5b677dd5748f4%2F674d3a30bcb4424dbc5b5bf5fea291f2?format=webp&width=800',
       process: [
         { title: 'Leads en kandidaten sourcing', description: 'Wij benaderen proactief opdrachtgevers en identificeren toptalent tegelijkertijd.' },
@@ -92,8 +123,8 @@ const ServiceDetail: React.FC = () => {
         { title: 'Matchingfocus', description: 'Jij focust je op matchen terwijl wij de pijpleiding vullen.' }
       ],
       benefits: [
-        'Breaks de klassieke kip-ei discussie',
-        'Consistente instroom van beide zijdes',
+        'Breekt de klassieke kip-ei discussie',
+        'Consistente instroom van beide zijden',
         'Opdrachten vervuld binnen 4-6 weken',
         'Schaal zonder back-office overhead'
       ],
@@ -210,6 +241,34 @@ const ServiceDetail: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Pillar content (alleen bij diensten met uitgebreide content) */}
+      {currentService.pillar && (
+        <section className="mb-20">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-16 text-center">
+              Alles over leadgeneratie voor recruitment agencies
+            </h2>
+            <div className="space-y-14">
+              {currentService.pillar.map((block: any, idx: number) => (
+                <div key={idx} className={idx % 2 === 1 ? 'bg-brand-gray rounded-3xl p-8 md:p-10' : ''}>
+                  <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-5">{block.title}</h3>
+                  {block.paragraphs.map((p: string, pIdx: number) => (
+                    <p key={pIdx} className="text-lg text-slate-600 leading-relaxed mb-4 last:mb-0">
+                      {p}
+                    </p>
+                  ))}
+                  {block.link && (
+                    <Link to={block.link.to} className="inline-flex items-center gap-2 mt-4 text-slate-900 font-bold border-b-2 border-brand-yellow pb-1 hover:translate-x-1 transition-transform">
+                      {block.link.label} <ArrowRight size={20} />
+                    </Link>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA Section */}
       <section className="bg-slate-900 text-white rounded-3xl p-12 mb-12">

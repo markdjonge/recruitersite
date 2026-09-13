@@ -20,7 +20,7 @@ const About: React.FC = () => {
                    Wij zijn<br/>LinkedUp.
                 </h1>
                 <p className="text-xl text-slate-600 mb-6 leading-relaxed">
-                   Wij geloven dat recruitment agencies het beste zijn in één ding: <strong>de perfecte match maken</strong>. Maar te vaak gaat kostbare tijd verloren aan koude acquisitie en eindeloos zoeken naar kandidaten.
+                   Wij geloven dat recruitment agencies op hun best zijn in één ding: <strong>de perfecte match maken</strong>. Maar te vaak gaat kostbare tijd verloren aan koude acquisitie en eindeloos zoeken naar kandidaten.
                 </p>
                 <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                    Daarom hebben wij LinkedUp opgericht. Wij zijn jouw externe motor voor business development en sourcing. Zodat jij kunt doen waar je goed in bent.

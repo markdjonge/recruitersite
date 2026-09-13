@@ -83,7 +83,7 @@ const Services: React.FC = () => {
             </div>
             <h3 className="text-2xl font-black text-slate-900 mb-4">Full Service</h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              Wij pakken de volledige funnel op: van lead tot match. Laat ons zowel opdrachtgevers als kandidaten sourced, zodat jij je volledig op matchen kunt focussen.
+              Wij pakken de volledige funnel op: van lead tot match. Wij sourcen zowel opdrachtgevers als kandidaten, zodat jij je volledig op matchen kunt focussen.
             </p>
             <ul className="space-y-2 mb-8 text-sm font-medium text-slate-500 flex-1">
               <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-yellow"></div>Leads én kandidaten</li>

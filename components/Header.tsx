@@ -43,6 +43,7 @@ const Header: React.FC = () => {
           <Link to="/diensten" className={`text-base font-bold transition-colors ${isActive('/diensten')}`}>Onze diensten</Link>
           <Link to="/cases" className={`text-base font-bold transition-colors ${isActive('/cases')}`}>Cases</Link>
           <Link to="/over-ons" className={`text-base font-bold transition-colors ${isActive('/over-ons')}`}>Over ons</Link>
+          <Link to="/kennisbank" className={`text-base font-bold transition-colors ${isActive('/kennisbank')}`}>Kennisbank</Link>
         </nav>
 
         {/* Right Side - Phone & CTA */}
@@ -64,6 +65,7 @@ const Header: React.FC = () => {
           <Link to="/diensten" className="text-xl font-bold text-slate-900" onClick={closeMenu}>Onze diensten</Link>
           <Link to="/cases" className="text-xl font-bold text-slate-900" onClick={closeMenu}>Cases</Link>
           <Link to="/over-ons" className="text-xl font-bold text-slate-900" onClick={closeMenu}>Over ons</Link>
+          <Link to="/kennisbank" className="text-xl font-bold text-slate-900" onClick={closeMenu}>Kennisbank</Link>
           <Link to="/contact" className="bg-brand-yellow text-slate-900 text-center py-4 rounded-full font-bold mt-4" onClick={closeMenu}>
              Contact opnemen
            </Link>
