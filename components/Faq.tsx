@@ -11,7 +11,7 @@ export const faqItems = [
   },
   {
     question: 'Hoe kom ik als recruitment agency aan meer opdrachtgevers?',
-    answer: 'De meeste agencies zijn afhankelijk van hun eigen netwerk en koude acquisitie. LinkedUp neemt de commerciële acquisitie over: wij mappen jouw doelmarkt, identificeren hiring managers met actieve vacatures en benaderen hen namens jouw bureau. Zo ontstaat een voorspelbare stroom van gesprekken met potentiële opdrachtgevers.'
+    answer: 'De meeste agencies zijn afhankelijk van hun eigen netwerk en koude acquisitie. LinkedUp neemt de commerciële acquisitie over: wij mappen jouw doelmarkt, identificeren hiring managers met actieve vacatures en benaderen hen onder onze eigen naam. Positieve reacties sturen wij direct naar jou door. Zo ontstaat een voorspelbare stroom van gesprekken met potentiële opdrachtgevers.'
   },
   {
     question: 'Wat kost leadgeneratie voor een recruitmentbureau?',
@@ -19,7 +19,7 @@ export const faqItems = [
   },
   {
     question: 'Voor welke recruitment niches werkt LinkedUp?',
-    answer: 'LinkedUp werkt voor recruitment agencies in vrijwel elke niche, waaronder techniek, zorg, finance, legal, IT, logistiek, marketing, sales en development. Met onze gratis AI-marktscan zie je direct hoeveel openstaande vacatures er op dit moment in jouw niche in Nederland zijn.'
+    answer: 'LinkedUp werkt voor recruitment agencies in vrijwel elke niche, waaronder techniek, zorg, finance, legal, IT, logistiek, marketing, sales en development. Met onze gratis marktscan krijg je direct een indicatieve AI-inschatting van het aantal openstaande vacatures in jouw niche in Nederland.'
   },
   {
     question: 'Hoe snel levert leadgeneratie resultaat op voor mijn agency?',
@@ -28,7 +28,9 @@ export const faqItems = [
 ];
 
 const Faq: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  // Standaard alles dicht: rustiger beeld. Antwoorden staan altijd in de HTML
+  // (alleen visueel ingeklapt) zodat crawlers en AI's alle content kunnen lezen.
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section id="faq" className="py-24 bg-brand-gray">
@@ -56,11 +58,17 @@ const Faq: React.FC = () => {
                   className={`flex-shrink-0 ml-4 text-brand-yellow transition-transform ${openIndex === i ? 'rotate-180' : ''}`}
                 />
               </button>
-              {openIndex === i && (
-                <div className="px-6 pb-6 text-slate-600 leading-relaxed animate-fade-in">
-                  {item.answer}
+              <div
+                className={`grid transition-all duration-300 ease-in-out ${
+                  openIndex === i ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <div className="px-6 pb-6 text-slate-600 leading-relaxed">
+                    {item.answer}
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

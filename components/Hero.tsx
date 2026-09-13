@@ -9,12 +9,12 @@ const Hero: React.FC = () => {
       {/* Decorative Elements - Yellow Shapes */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-gray -skew-x-12 translate-x-32 hidden lg:block z-0"></div>
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 min-w-0 w-full">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-16 items-center">
 
           <div className="max-w-3xl">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-slate-900 mb-8 leading-[1]">
-              <span className="block text-base md:text-lg font-bold tracking-widest uppercase text-slate-500 mb-6 leading-normal">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-slate-900 mb-8 leading-[1] break-words">
+              <span className="block text-sm sm:text-base md:text-lg font-bold tracking-wider sm:tracking-widest uppercase text-slate-500 mb-6 leading-normal">
                 Leadgeneratie voor recruitment agencies
               </span>
               Wij de match,<br />
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
               </a>
             </div>
 
-            <div className="mt-16 flex items-center gap-8 text-sm font-semibold text-slate-500 uppercase tracking-wider">
+            <div className="mt-16 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                <div className="flex items-center gap-2">
                  <Briefcase size={18} className="text-brand-yellow" />
                  Meer vacatures

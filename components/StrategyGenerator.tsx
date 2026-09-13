@@ -109,7 +109,7 @@ const StrategyGenerator: React.FC = () => {
             {!result && !loading && (
               <div className="h-full border-2 border-dashed border-slate-700 rounded-3xl flex flex-col items-center justify-center p-10 text-center min-h-[400px]">
                  <BarChart3 className="text-slate-700 mb-4" size={48} />
-                 <p className="text-slate-500 font-medium max-w-xs">Vul uw niche in. Wij tonen direct hoeveel openstaande vacatures er nu in de markt zijn.</p>
+                 <p className="text-slate-500 font-medium max-w-xs">Vul uw niche in. Wij tonen direct een indicatie van het aantal openstaande vacatures in de markt.</p>
               </div>
             )}
             
@@ -224,7 +224,7 @@ const StrategyGenerator: React.FC = () => {
                         Help mij deze business binnenhalen <ExternalLink size={16} />
                       </a>
                       <p className="text-xs text-slate-400 text-center">
-                          *Cijfers zijn een real-time markt indicatie.
+                          *Indicatieve marktscan op basis van AI.
                       </p>
                    </div>
                 </div>
