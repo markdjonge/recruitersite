@@ -12,6 +12,7 @@ import NoCureNoPay from './pages/NoCureNoPay';
 import Kennisbank from './pages/Kennisbank';
 import BlogPost from './pages/BlogPost';
 import Landing from './pages/Landing';
+import NotFound from './pages/NotFound';
 
 export const routes: RouteRecord[] = [
   // Landingspagina voor campagnes: zonder header/footer
@@ -56,6 +57,7 @@ export const routes: RouteRecord[] = [
       { path: 'over-ons', Component: About },
       { path: 'werken-bij', Component: About },
       { path: 'contact', Component: ContactPage },
+      { path: '*', Component: NotFound },
     ],
   },
 ];
