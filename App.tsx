@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet, useLocation, useMatches } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -19,9 +19,14 @@ const App: React.FC = () => {
     }
   }, []);
 
+  const matches = useMatches();
+  const isNotFound = matches.some((m) => (m as any).route?.path === '*');
+
   useEffect(() => {
+    // Op de NotFound-route (spam/bots op willekeurige paden) meten we geen pageview
+    if (isNotFound) return;
     trackPageView(location.pathname);
-  }, [location.pathname]);
+  }, [location.pathname, isNotFound]);
 
   return (
     <div className="bg-slate-50 min-h-screen text-slate-900 selection:bg-brand-200 selection:text-brand-900 font-sans flex flex-col">

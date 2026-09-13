@@ -2,9 +2,9 @@
   command = "npm run build"
   publish = "dist"
 
-# Alleen routes die als statische HTML bestaan worden geserveerd.
-# Willekeurige (spam-)paden krijgen een echte 404, zodat GA4 geen junk registreert.
+# SPA-fallback: onbekende paden laden de app; React Router toont daar de NotFound-pagina.
+# GA4-pageviews worden bij NotFound NIET gestuurd (zie App.tsx), zodat spam-paden niet meetellen.
 [[redirects]]
   from = "/*"
-  to = "/404.html"
-  status = 404
+  to = "/index.html"
+  status = 200
