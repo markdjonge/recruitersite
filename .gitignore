@@ -4,3 +4,9 @@ dist
 .env.local
 .env.*.local
 .DS_Store
+
+# Service account / credential keys (NOOIT committen)
+*service-account*.json
+*credentials*.json
+*private-key*.json
+*.pem
