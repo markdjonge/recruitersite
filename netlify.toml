@@ -1,6 +1,14 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  functions = "netlify/functions"
+
+# Server-side API: de Gemini-key blijft op de server (zie netlify/functions/generate-strategy.mjs).
+# Deze redirect MOET vóór de SPA-fallback hieronder staan.
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
 
 # SPA-fallback: onbekende paden laden de app; React Router toont daar de NotFound-pagina.
 # GA4-pageviews worden bij NotFound NIET gestuurd (zie App.tsx), zodat spam-paden niet meetellen.
